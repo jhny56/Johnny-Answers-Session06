@@ -48,9 +48,11 @@ def main(args=None):
 
     if len(sys.argv) != 3:
         print("Usage: delivery_client.py <item_name> <quantity>")
-        return
-    item_name = sys.argv[1]
-    quantity = int(sys.argv[2])
+        item_name = 'item1'
+        quantity = 2
+    else:
+        item_name = sys.argv[1]
+        quantity = int(sys.argv[2])
 
     client = DeliveryClient()
     client.send_goal(item_name, quantity)
