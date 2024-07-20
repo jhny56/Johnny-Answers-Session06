@@ -1,0 +1,216 @@
+[0.031s] Invoking command in '/home/robot/Desktop/Session06/Johnny-Answers-Session06/build/my_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/robot/Desktop/Session06/Johnny-Answers-Session06/install/warehouse_robot:/opt/ros/humble /usr/bin/cmake /home/robot/Desktop/Session06/Johnny-Answers-Session06/src/my_interfaces -DCMAKE_INSTALL_PREFIX=/home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces
+[0.064s] -- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.304s] -- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[0.422s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.425s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.430s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.490s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.224s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[1.627s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[2.155s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[2.208s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[2.212s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[2.273s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[2.274s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[2.274s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[2.274s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[2.317s] -- Found PythonExtra: .so  
+[2.424s] -- Added test 'lint_cmake' to check CMake code style
+[2.428s] -- Added test 'xmllint' to check XML markup files
+[2.456s] -- Configuring done
+[2.538s] -- Generating done
+[2.545s] -- Build files have been written to: /home/robot/Desktop/Session06/Johnny-Answers-Session06/build/my_interfaces
+[2.559s] Invoked command in '/home/robot/Desktop/Session06/Johnny-Answers-Session06/build/my_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/robot/Desktop/Session06/Johnny-Answers-Session06/install/warehouse_robot:/opt/ros/humble /usr/bin/cmake /home/robot/Desktop/Session06/Johnny-Answers-Session06/src/my_interfaces -DCMAKE_INSTALL_PREFIX=/home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces
+[2.560s] Invoking command in '/home/robot/Desktop/Session06/Johnny-Answers-Session06/build/my_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/robot/Desktop/Session06/Johnny-Answers-Session06/install/warehouse_robot:/opt/ros/humble /usr/bin/cmake --build /home/robot/Desktop/Session06/Johnny-Answers-Session06/build/my_interfaces -- -j6 -l6
+[2.651s] [  3%] [34m[1mGenerating C code for ROS interfaces[0m
+[2.683s] [  6%] [34m[1mGenerating C++ code for ROS interfaces[0m
+[2.700s] [  6%] Built target ament_cmake_python_copy_my_interfaces
+[3.162s] running egg_info
+[3.163s] creating my_interfaces.egg-info
+[3.164s] writing my_interfaces.egg-info/PKG-INFO
+[3.164s] writing dependency_links to my_interfaces.egg-info/dependency_links.txt
+[3.164s] writing top-level names to my_interfaces.egg-info/top_level.txt
+[3.165s] writing manifest file 'my_interfaces.egg-info/SOURCES.txt'
+[3.169s] reading manifest file 'my_interfaces.egg-info/SOURCES.txt'
+[3.169s] writing manifest file 'my_interfaces.egg-info/SOURCES.txt'
+[3.218s] [  6%] Built target ament_cmake_python_build_my_interfaces_egg
+[3.428s] [  9%] [32mBuilding C object CMakeFiles/my_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_interfaces/action/detail/deliver_item__functions.c.o[0m
+[3.444s] [  9%] Built target my_interfaces__cpp
+[3.471s] [ 12%] [34m[1mGenerating C++ introspection for ROS interfaces[0m
+[3.473s] [ 19%] [34m[1mGenerating C++ type support dispatch for ROS interfaces[0m
+[3.473s] [ 19%] [34m[1mGenerating C++ type support for eProsima Fast-RTPS[0m
+[3.866s] [ 22%] [32m[1mLinking C shared library libmy_interfaces__rosidl_generator_c.so[0m
+[3.965s] [ 22%] Built target my_interfaces__rosidl_generator_c
+[3.995s] [ 25%] [34m[1mGenerating C type support for eProsima Fast-RTPS[0m
+[4.008s] [ 29%] [34m[1mGenerating C type support dispatch for ROS interfaces[0m
+[4.012s] [ 32%] [34m[1mGenerating C introspection for ROS interfaces[0m
+[4.074s] [ 35%] [32mBuilding CXX object CMakeFiles/my_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_interfaces/action/deliver_item__type_support.cpp.o[0m
+[4.107s] [ 38%] [32mBuilding CXX object CMakeFiles/my_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_interfaces/action/detail/deliver_item__type_support.cpp.o[0m
+[4.339s] [ 41%] [32mBuilding CXX object CMakeFiles/my_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_interfaces/action/detail/dds_fastrtps/deliver_item__type_support.cpp.o[0m
+[4.709s] [ 45%] [32mBuilding CXX object CMakeFiles/my_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_interfaces/action/deliver_item__type_support.cpp.o[0m
+[4.789s] [ 48%] [32mBuilding CXX object CMakeFiles/my_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_interfaces/action/detail/deliver_item__type_support_c.cpp.o[0m
+[4.806s] [ 51%] [32mBuilding C object CMakeFiles/my_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_interfaces/action/detail/deliver_item__type_support.c.o[0m
+[4.909s] [ 54%] [32m[1mLinking CXX shared library libmy_interfaces__rosidl_typesupport_c.so[0m
+[5.010s] [ 58%] [32m[1mLinking C shared library libmy_interfaces__rosidl_typesupport_introspection_c.so[0m
+[5.177s] [ 58%] Built target my_interfaces__rosidl_typesupport_c
+[5.314s] [ 58%] Built target my_interfaces__rosidl_typesupport_introspection_c
+[6.337s] [ 61%] [32m[1mLinking CXX shared library libmy_interfaces__rosidl_typesupport_cpp.so[0m
+[6.417s] [ 64%] [32m[1mLinking CXX shared library libmy_interfaces__rosidl_typesupport_fastrtps_c.so[0m
+[6.454s] [ 64%] Built target my_interfaces__rosidl_typesupport_cpp
+[6.564s] [ 67%] [32m[1mLinking CXX shared library libmy_interfaces__rosidl_typesupport_introspection_cpp.so[0m
+[6.598s] [ 67%] Built target my_interfaces__rosidl_typesupport_fastrtps_c
+[6.598s] [ 70%] [32m[1mLinking CXX shared library libmy_interfaces__rosidl_typesupport_fastrtps_cpp.so[0m
+[6.734s] [ 70%] Built target my_interfaces__rosidl_typesupport_introspection_cpp
+[6.760s] [ 70%] Built target my_interfaces__rosidl_typesupport_fastrtps_cpp
+[6.816s] [ 70%] Built target my_interfaces
+[6.868s] [ 74%] [34m[1mGenerating Python code for ROS interfaces[0m
+[8.133s] [ 74%] Built target my_interfaces__py
+[8.183s] [ 77%] [32mBuilding C object CMakeFiles/my_interfaces__rosidl_generator_py.dir/rosidl_generator_py/my_interfaces/action/_deliver_item_s.c.o[0m
+[8.774s] [ 80%] [32m[1mLinking C shared library rosidl_generator_py/my_interfaces/libmy_interfaces__rosidl_generator_py.so[0m
+[8.879s] [ 80%] Built target my_interfaces__rosidl_generator_py
+[8.939s] [ 83%] [32mBuilding C object CMakeFiles/my_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/my_interfaces/_my_interfaces_s.ep.rosidl_typesupport_c.c.o[0m
+[8.939s] [ 87%] [32mBuilding C object CMakeFiles/my_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/my_interfaces/_my_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o[0m
+[8.956s] [ 90%] [32mBuilding C object CMakeFiles/my_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/my_interfaces/_my_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o[0m
+[9.204s] [ 93%] [32m[1mLinking C shared library rosidl_generator_py/my_interfaces/my_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so[0m
+[9.206s] [ 96%] [32m[1mLinking C shared library rosidl_generator_py/my_interfaces/my_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so[0m
+[9.207s] [100%] [32m[1mLinking C shared library rosidl_generator_py/my_interfaces/my_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so[0m
+[9.320s] [100%] Built target my_interfaces__rosidl_typesupport_c__pyext
+[9.320s] [100%] Built target my_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[9.320s] [100%] Built target my_interfaces__rosidl_typesupport_introspection_c__pyext
+[9.348s] Invoked command in '/home/robot/Desktop/Session06/Johnny-Answers-Session06/build/my_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/robot/Desktop/Session06/Johnny-Answers-Session06/install/warehouse_robot:/opt/ros/humble /usr/bin/cmake --build /home/robot/Desktop/Session06/Johnny-Answers-Session06/build/my_interfaces -- -j6 -l6
+[9.664s] Invoking command in '/home/robot/Desktop/Session06/Johnny-Answers-Session06/build/my_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/robot/Desktop/Session06/Johnny-Answers-Session06/install/warehouse_robot:/opt/ros/humble /usr/bin/cmake --install /home/robot/Desktop/Session06/Johnny-Answers-Session06/build/my_interfaces
+[9.683s] -- Install configuration: ""
+[9.684s] -- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/share/ament_index/resource_index/rosidl_interfaces/my_interfaces
+[9.684s] -- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/include/my_interfaces/my_interfaces
+[9.686s] -- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/include/my_interfaces/my_interfaces/msg
+[9.686s] -- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/include/my_interfaces/my_interfaces/msg/rosidl_generator_c__visibility_control.h
+[9.686s] -- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/include/my_interfaces/my_interfaces/action
+[9.687s] -- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/include/my_interfaces/my_interfaces/action/detail
+[9.687s] -- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/include/my_interfaces/my_interfaces/action/detail/deliver_item__struct.h
+[9.687s] -- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/include/my_interfaces/my_interfaces/action/detail/deliver_item__type_support.h
+[9.687s] -- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/include/my_interfaces/my_interfaces/action/detail/deliver_item__functions.c
+[9.687s] -- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/include/my_interfaces/my_interfaces/action/detail/deliver_item__functions.h
+[9.688s] -- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/include/my_interfaces/my_interfaces/action/deliver_item.h
+[9.692s] -- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/share/my_interfaces/environment/library_path.sh
+[9.692s] -- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/share/my_interfaces/environment/library_path.dsv
+[9.692s] -- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/lib/libmy_interfaces__rosidl_generator_c.so
+[9.692s] -- Set runtime path of "/home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/lib/libmy_interfaces__rosidl_generator_c.so" to ""
+[9.693s] -- Up-to-date: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/include/my_interfaces/my_interfaces
+[9.693s] -- Up-to-date: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/include/my_interfaces/my_interfaces/msg
+[9.693s] -- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/include/my_interfaces/my_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[9.693s] -- Up-to-date: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/include/my_interfaces/my_interfaces/action
+[9.693s] -- Up-to-date: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/include/my_interfaces/my_interfaces/action/detail
+[9.693s] -- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/include/my_interfaces/my_interfaces/action/detail/deliver_item__rosidl_typesupport_fastrtps_c.h
+[9.694s] -- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/lib/libmy_interfaces__rosidl_typesupport_fastrtps_c.so
+[9.696s] -- Set runtime path of "/home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/lib/libmy_interfaces__rosidl_typesupport_fastrtps_c.so" to ""
+[9.696s] -- Up-to-date: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/include/my_interfaces/my_interfaces
+[9.696s] -- Up-to-date: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/include/my_interfaces/my_interfaces/msg
+[9.696s] -- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/include/my_interfaces/my_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[9.696s] -- Up-to-date: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/include/my_interfaces/my_interfaces/action
+[9.696s] -- Up-to-date: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/include/my_interfaces/my_interfaces/action/detail
+[9.696s] -- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/include/my_interfaces/my_interfaces/action/detail/deliver_item__type_support.c
+[9.697s] -- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/include/my_interfaces/my_interfaces/action/detail/deliver_item__rosidl_typesupport_introspection_c.h
+[9.697s] -- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/lib/libmy_interfaces__rosidl_typesupport_introspection_c.so
+[9.708s] -- Set runtime path of "/home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/lib/libmy_interfaces__rosidl_typesupport_introspection_c.so" to ""
+[9.708s] -- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/lib/libmy_interfaces__rosidl_typesupport_c.so
+[9.708s] -- Set runtime path of "/home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/lib/libmy_interfaces__rosidl_typesupport_c.so" to ""
+[9.709s] -- Up-to-date: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/include/my_interfaces/my_interfaces
+[9.709s] -- Up-to-date: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/include/my_interfaces/my_interfaces/action
+[9.709s] -- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/include/my_interfaces/my_interfaces/action/deliver_item.hpp
+[9.709s] -- Up-to-date: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/include/my_interfaces/my_interfaces/action/detail
+[9.709s] -- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/include/my_interfaces/my_interfaces/action/detail/deliver_item__builder.hpp
+[9.709s] -- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/include/my_interfaces/my_interfaces/action/detail/deliver_item__struct.hpp
+[9.713s] -- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/include/my_interfaces/my_interfaces/action/detail/deliver_item__traits.hpp
+[9.714s] -- Up-to-date: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/include/my_interfaces/my_interfaces
+[9.714s] -- Up-to-date: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/include/my_interfaces/my_interfaces/msg
+[9.714s] -- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/include/my_interfaces/my_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[9.714s] -- Up-to-date: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/include/my_interfaces/my_interfaces/action
+[9.714s] -- Up-to-date: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/include/my_interfaces/my_interfaces/action/detail
+[9.714s] -- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/include/my_interfaces/my_interfaces/action/detail/deliver_item__rosidl_typesupport_fastrtps_cpp.hpp
+[9.715s] -- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/include/my_interfaces/my_interfaces/action/detail/dds_fastrtps
+[9.715s] -- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/lib/libmy_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[9.715s] -- Set runtime path of "/home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/lib/libmy_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""
+[9.715s] -- Up-to-date: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/include/my_interfaces/my_interfaces
+[9.715s] -- Up-to-date: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/include/my_interfaces/my_interfaces/action
+[9.715s] -- Up-to-date: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/include/my_interfaces/my_interfaces/action/detail
+[9.716s] -- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/include/my_interfaces/my_interfaces/action/detail/deliver_item__type_support.cpp
+[9.716s] -- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/include/my_interfaces/my_interfaces/action/detail/deliver_item__rosidl_typesupport_introspection_cpp.hpp
+[9.716s] -- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/lib/libmy_interfaces__rosidl_typesupport_introspection_cpp.so
+[9.716s] -- Set runtime path of "/home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/lib/libmy_interfaces__rosidl_typesupport_introspection_cpp.so" to ""
+[9.716s] -- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/lib/libmy_interfaces__rosidl_typesupport_cpp.so
+[9.716s] -- Set runtime path of "/home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/lib/libmy_interfaces__rosidl_typesupport_cpp.so" to ""
+[9.717s] -- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/share/my_interfaces/environment/pythonpath.sh
+[9.717s] -- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/share/my_interfaces/environment/pythonpath.dsv
+[9.717s] -- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/local/lib/python3.10/dist-packages/my_interfaces-0.0.0-py3.10.egg-info
+[9.717s] -- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/local/lib/python3.10/dist-packages/my_interfaces-0.0.0-py3.10.egg-info/SOURCES.txt
+[9.717s] -- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/local/lib/python3.10/dist-packages/my_interfaces-0.0.0-py3.10.egg-info/PKG-INFO
+[9.717s] -- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/local/lib/python3.10/dist-packages/my_interfaces-0.0.0-py3.10.egg-info/dependency_links.txt
+[9.718s] -- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/local/lib/python3.10/dist-packages/my_interfaces-0.0.0-py3.10.egg-info/top_level.txt
+[9.718s] -- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/local/lib/python3.10/dist-packages/my_interfaces
+[9.718s] -- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/local/lib/python3.10/dist-packages/my_interfaces/_my_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+[9.718s] -- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/local/lib/python3.10/dist-packages/my_interfaces/_my_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+[9.718s] -- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/local/lib/python3.10/dist-packages/my_interfaces/my_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[9.718s] -- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/local/lib/python3.10/dist-packages/my_interfaces/my_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[9.718s] -- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/local/lib/python3.10/dist-packages/my_interfaces/_my_interfaces_s.ep.rosidl_typesupport_c.c
+[9.719s] -- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/local/lib/python3.10/dist-packages/my_interfaces/action
+[9.719s] -- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/local/lib/python3.10/dist-packages/my_interfaces/action/_deliver_item.py
+[9.719s] -- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/local/lib/python3.10/dist-packages/my_interfaces/action/_deliver_item_s.c
+[9.719s] -- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/local/lib/python3.10/dist-packages/my_interfaces/action/__init__.py
+[9.719s] -- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/local/lib/python3.10/dist-packages/my_interfaces/libmy_interfaces__rosidl_generator_py.so
+[9.719s] -- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/local/lib/python3.10/dist-packages/my_interfaces/my_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[9.720s] -- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/local/lib/python3.10/dist-packages/my_interfaces/__init__.py
+[9.803s] Listing '/home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/local/lib/python3.10/dist-packages/my_interfaces'...
+[9.803s] Compiling '/home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/local/lib/python3.10/dist-packages/my_interfaces/__init__.py'...
+[9.803s] Listing '/home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/local/lib/python3.10/dist-packages/my_interfaces/action'...
+[9.803s] Compiling '/home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/local/lib/python3.10/dist-packages/my_interfaces/action/__init__.py'...
+[9.804s] Compiling '/home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/local/lib/python3.10/dist-packages/my_interfaces/action/_deliver_item.py'...
+[9.814s] -- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/local/lib/python3.10/dist-packages/my_interfaces/my_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[9.815s] -- Set runtime path of "/home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/local/lib/python3.10/dist-packages/my_interfaces/my_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[9.816s] -- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/local/lib/python3.10/dist-packages/my_interfaces/my_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[9.816s] -- Set runtime path of "/home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/local/lib/python3.10/dist-packages/my_interfaces/my_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[9.819s] -- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/local/lib/python3.10/dist-packages/my_interfaces/my_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[9.821s] -- Set runtime path of "/home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/local/lib/python3.10/dist-packages/my_interfaces/my_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[9.821s] -- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/lib/libmy_interfaces__rosidl_generator_py.so
+[9.822s] -- Set runtime path of "/home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/lib/libmy_interfaces__rosidl_generator_py.so" to ""
+[9.822s] -- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/share/my_interfaces/action/DeliverItem.idl
+[9.822s] -- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/share/my_interfaces/action/DeliverItem.action
+[9.827s] -- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/share/ament_index/resource_index/package_run_dependencies/my_interfaces
+[9.827s] -- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/share/ament_index/resource_index/parent_prefix_path/my_interfaces
+[9.828s] -- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/share/my_interfaces/environment/ament_prefix_path.sh
+[9.828s] -- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/share/my_interfaces/environment/ament_prefix_path.dsv
+[9.828s] -- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/share/my_interfaces/environment/path.sh
+[9.828s] -- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/share/my_interfaces/environment/path.dsv
+[9.828s] -- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/share/my_interfaces/local_setup.bash
+[9.829s] -- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/share/my_interfaces/local_setup.sh
+[9.829s] -- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/share/my_interfaces/local_setup.zsh
+[9.829s] -- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/share/my_interfaces/local_setup.dsv
+[9.829s] -- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/share/my_interfaces/package.dsv
+[9.834s] -- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/share/ament_index/resource_index/packages/my_interfaces
+[9.835s] -- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/share/my_interfaces/cmake/export_my_interfaces__rosidl_generator_cExport.cmake
+[9.835s] -- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/share/my_interfaces/cmake/export_my_interfaces__rosidl_generator_cExport-noconfig.cmake
+[9.835s] -- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/share/my_interfaces/cmake/export_my_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+[9.835s] -- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/share/my_interfaces/cmake/export_my_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[9.836s] -- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/share/my_interfaces/cmake/my_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[9.836s] -- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/share/my_interfaces/cmake/my_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[9.836s] -- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/share/my_interfaces/cmake/my_interfaces__rosidl_typesupport_cExport.cmake
+[9.836s] -- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/share/my_interfaces/cmake/my_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[9.840s] -- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/share/my_interfaces/cmake/export_my_interfaces__rosidl_generator_cppExport.cmake
+[9.841s] -- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/share/my_interfaces/cmake/export_my_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+[9.841s] -- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/share/my_interfaces/cmake/export_my_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[9.841s] -- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/share/my_interfaces/cmake/my_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[9.841s] -- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/share/my_interfaces/cmake/my_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[9.842s] -- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/share/my_interfaces/cmake/my_interfaces__rosidl_typesupport_cppExport.cmake
+[9.842s] -- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/share/my_interfaces/cmake/my_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[9.842s] -- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/share/my_interfaces/cmake/export_my_interfaces__rosidl_generator_pyExport.cmake
+[9.842s] -- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/share/my_interfaces/cmake/export_my_interfaces__rosidl_generator_pyExport-noconfig.cmake
+[9.842s] -- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/share/my_interfaces/cmake/rosidl_cmake-extras.cmake
+[9.842s] -- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/share/my_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[9.843s] -- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/share/my_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[9.843s] -- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/share/my_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[9.843s] -- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/share/my_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[9.843s] -- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/share/my_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[9.843s] -- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/share/my_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[9.844s] -- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/share/my_interfaces/cmake/my_interfacesConfig.cmake
+[9.844s] -- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/share/my_interfaces/cmake/my_interfacesConfig-version.cmake
+[9.844s] -- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/share/my_interfaces/package.xml
+[9.849s] Invoked command in '/home/robot/Desktop/Session06/Johnny-Answers-Session06/build/my_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/robot/Desktop/Session06/Johnny-Answers-Session06/install/warehouse_robot:/opt/ros/humble /usr/bin/cmake --install /home/robot/Desktop/Session06/Johnny-Answers-Session06/build/my_interfaces

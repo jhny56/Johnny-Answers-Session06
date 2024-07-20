@@ -1,0 +1,12 @@
+# ~/ros2_ws/src/warehouse_robot/action/DeliverItem.action
+
+# Goal
+string item_name
+int32 quantity
+---
+# Result
+bool success
+string message
+---
+# Feedback
+string status

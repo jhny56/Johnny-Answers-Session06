@@ -1,0 +1,3 @@
+[console_scripts]
+delivery_action = warehouse_robot.Delivery_Action_Server:main
+

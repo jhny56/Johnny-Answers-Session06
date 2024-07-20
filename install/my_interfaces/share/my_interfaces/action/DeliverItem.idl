@@ -1,0 +1,30 @@
+// generated from rosidl_adapter/resource/action.idl.em
+// with input from my_interfaces/action/DeliverItem.action
+// generated code does not contain a copyright notice
+
+
+module my_interfaces {
+  module action {
+    @verbatim (language="comment", text=
+      "~/ros2_ws/src/warehouse_robot/action/DeliverItem.action")
+    struct DeliverItem_Goal {
+      @verbatim (language="comment", text=
+        "Goal")
+      string item_name;
+
+      int32 quantity;
+    };
+    @verbatim (language="comment", text=
+      "Result")
+    struct DeliverItem_Result {
+      boolean success;
+
+      string message;
+    };
+    @verbatim (language="comment", text=
+      "Feedback")
+    struct DeliverItem_Feedback {
+      string status;
+    };
+  };
+};
