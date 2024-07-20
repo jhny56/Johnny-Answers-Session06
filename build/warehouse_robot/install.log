@@ -1,8 +1,10 @@
 /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/warehouse_robot/lib/python3.10/site-packages/warehouse_robot/delivery_client.py
+/home/robot/Desktop/Session06/Johnny-Answers-Session06/install/warehouse_robot/lib/python3.10/site-packages/warehouse_robot/stock_checker_client.py
 /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/warehouse_robot/lib/python3.10/site-packages/warehouse_robot/stock_checker.py
 /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/warehouse_robot/lib/python3.10/site-packages/warehouse_robot/__init__.py
 /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/warehouse_robot/lib/python3.10/site-packages/warehouse_robot/Delivery_Action_Server.py
 /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/warehouse_robot/lib/python3.10/site-packages/warehouse_robot/__pycache__/delivery_client.cpython-310.pyc
+/home/robot/Desktop/Session06/Johnny-Answers-Session06/install/warehouse_robot/lib/python3.10/site-packages/warehouse_robot/__pycache__/stock_checker_client.cpython-310.pyc
 /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/warehouse_robot/lib/python3.10/site-packages/warehouse_robot/__pycache__/stock_checker.cpython-310.pyc
 /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/warehouse_robot/lib/python3.10/site-packages/warehouse_robot/__pycache__/__init__.cpython-310.pyc
 /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/warehouse_robot/lib/python3.10/site-packages/warehouse_robot/__pycache__/Delivery_Action_Server.cpython-310.pyc
@@ -17,4 +19,5 @@
 /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/warehouse_robot/lib/python3.10/site-packages/warehouse_robot-0.0.0-py3.10.egg-info/entry_points.txt
 /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/warehouse_robot/lib/warehouse_robot/delivery_action
 /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/warehouse_robot/lib/warehouse_robot/delivery_client
+/home/robot/Desktop/Session06/Johnny-Answers-Session06/install/warehouse_robot/lib/warehouse_robot/stock_client
 /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/warehouse_robot/lib/warehouse_robot/stock_server

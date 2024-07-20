@@ -16,3 +16,4 @@ warehouse_robot/Delivery_Action_Server.py
 warehouse_robot/__init__.py
 warehouse_robot/delivery_client.py
 warehouse_robot/stock_checker.py
+warehouse_robot/stock_checker_client.py
