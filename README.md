@@ -12,6 +12,9 @@ ros2 action send_goal /deliver_item my_interfaces/action/DeliverItem "{item_name
 
 ros2 service call /check_stock warehouse_robot/srv/CheckStock "{item_name: 'item1'}"
 
+my_interfaces.action.DeliverItem_FeedbackMessage(goal_id=unique_identifier_msgs.msg.UUID(uuid=array([ 20,  70,  71, 147,   4, 144,  65, 190, 128, 106,  58, 
+182,  59, 172,  36,  95], dtype=uint8)), feedback=my_interfaces.action.DeliverItem_Feedback(status='Delivering Item 1'))
+
 
 
 

@@ -22,6 +22,7 @@ setup(
         'console_scripts': [
             'delivery_action = warehouse_robot.Delivery_Action_Server:main',
             'stock_server = warehouse_robot.stock_checker:main',
+            'delivery_client = warehouse_robot.delivery_client:main',
         ],
     },
 )
