@@ -17,6 +17,9 @@ set(CMAKE_MULTIPLE_OUTPUT_PAIRS
   "/home/robot/Desktop/Session06/Johnny-Answers-Session06/build/my_interfaces/rosidl_generator_py/my_interfaces/action/__init__.py" "/home/robot/Desktop/Session06/Johnny-Answers-Session06/build/my_interfaces/rosidl_generator_py/my_interfaces/_my_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c"
   "/home/robot/Desktop/Session06/Johnny-Answers-Session06/build/my_interfaces/rosidl_generator_py/my_interfaces/action/_deliver_item.py" "/home/robot/Desktop/Session06/Johnny-Answers-Session06/build/my_interfaces/rosidl_generator_py/my_interfaces/_my_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c"
   "/home/robot/Desktop/Session06/Johnny-Answers-Session06/build/my_interfaces/rosidl_generator_py/my_interfaces/action/_deliver_item_s.c" "/home/robot/Desktop/Session06/Johnny-Answers-Session06/build/my_interfaces/rosidl_generator_py/my_interfaces/_my_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c"
+  "/home/robot/Desktop/Session06/Johnny-Answers-Session06/build/my_interfaces/rosidl_generator_py/my_interfaces/srv/__init__.py" "/home/robot/Desktop/Session06/Johnny-Answers-Session06/build/my_interfaces/rosidl_generator_py/my_interfaces/_my_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c"
+  "/home/robot/Desktop/Session06/Johnny-Answers-Session06/build/my_interfaces/rosidl_generator_py/my_interfaces/srv/_check_stock.py" "/home/robot/Desktop/Session06/Johnny-Answers-Session06/build/my_interfaces/rosidl_generator_py/my_interfaces/_my_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c"
+  "/home/robot/Desktop/Session06/Johnny-Answers-Session06/build/my_interfaces/rosidl_generator_py/my_interfaces/srv/_check_stock_s.c" "/home/robot/Desktop/Session06/Johnny-Answers-Session06/build/my_interfaces/rosidl_generator_py/my_interfaces/_my_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c"
   )
 
 

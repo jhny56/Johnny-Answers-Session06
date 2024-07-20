@@ -67,6 +67,9 @@ include CMakeFiles/my_interfaces.dir/compiler_depend.make
 include CMakeFiles/my_interfaces.dir/progress.make
 
 CMakeFiles/my_interfaces: /home/robot/Desktop/Session06/Johnny-Answers-Session06/src/my_interfaces/action/DeliverItem.action
+CMakeFiles/my_interfaces: /home/robot/Desktop/Session06/Johnny-Answers-Session06/src/my_interfaces/srv/CheckStock.srv
+CMakeFiles/my_interfaces: rosidl_cmake/srv/CheckStock_Request.msg
+CMakeFiles/my_interfaces: rosidl_cmake/srv/CheckStock_Response.msg
 CMakeFiles/my_interfaces: /opt/ros/humble/share/action_msgs/msg/GoalInfo.idl
 CMakeFiles/my_interfaces: /opt/ros/humble/share/action_msgs/msg/GoalStatus.idl
 CMakeFiles/my_interfaces: /opt/ros/humble/share/action_msgs/msg/GoalStatusArray.idl

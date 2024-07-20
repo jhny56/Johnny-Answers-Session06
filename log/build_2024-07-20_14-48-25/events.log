@@ -1,0 +1,412 @@
+[0.000000] (-) TimerEvent: {}
+[0.000875] (my_interfaces) JobQueued: {'identifier': 'my_interfaces', 'dependencies': OrderedDict()}
+[0.001054] (warehouse_robot) JobQueued: {'identifier': 'warehouse_robot', 'dependencies': OrderedDict()}
+[0.002423] (my_interfaces) JobStarted: {'identifier': 'my_interfaces'}
+[0.018534] (warehouse_robot) JobStarted: {'identifier': 'warehouse_robot'}
+[0.036219] (my_interfaces) JobProgress: {'identifier': 'my_interfaces', 'progress': 'cmake'}
+[0.038330] (my_interfaces) JobProgress: {'identifier': 'my_interfaces', 'progress': 'build'}
+[0.041098] (my_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/robot/Desktop/Session06/Johnny-Answers-Session06/build/my_interfaces', '--', '-j6', '-l6'], 'cwd': '/home/robot/Desktop/Session06/Johnny-Answers-Session06/build/my_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:'), ('USER', 'robot'), ('LC_TIME', 'ar_LB.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/robot'), ('OLDPWD', '/home/robot/Desktop/Session06/Johnny-Answers-Session06/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ar_LB.UTF-8'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '2710'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=a3c8a3a0c43b89414915e3f3669b89c9'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/robot/Desktop/Session06/Johnny-Answers-Session06/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'robot'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'robot'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/robot-virtual-machine:@/tmp/.ICE-unix/2710,unix/robot-virtual-machine:/tmp/.ICE-unix/2710'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ar_LB.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/fbfc0653_563f_4455_bc6a_a9e4abfbbc44'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ar_LB.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.43R0Q2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.118'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces:/home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_package:/home/robot/Desktop/Session06/Johnny-Answers-Session06/install/warehouse_robot:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ar_LB.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ar_LB.UTF-8'), ('LC_IDENTIFICATION', 'ar_LB.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/robot/Desktop/Session06/Johnny-Answers-Session06/build/my_interfaces'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=a3c8a3a0c43b89414915e3f3669b89c9'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/local/lib/python3.10/dist-packages:/home/robot/Desktop/Session06/Johnny-Answers-Session06/install/warehouse_robot/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ar_LB.UTF-8'), ('LC_PAPER', 'ar_LB.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces:/home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_package:/home/robot/Desktop/Session06/Johnny-Answers-Session06/install/warehouse_robot:/opt/ros/humble')]), 'shell': False}
+[0.099875] (-) TimerEvent: {}
+[0.105921] (my_interfaces) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.200766] (-) TimerEvent: {}
+[0.301392] (-) TimerEvent: {}
+[0.348930] (my_interfaces) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[0.401958] (-) TimerEvent: {}
+[0.472047] (my_interfaces) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[0.475334] (my_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.480032] (my_interfaces) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.504292] (-) TimerEvent: {}
+[0.537041] (my_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.604774] (-) TimerEvent: {}
+[0.705783] (-) TimerEvent: {}
+[0.806638] (-) TimerEvent: {}
+[0.907233] (-) TimerEvent: {}
+[1.007848] (-) TimerEvent: {}
+[1.108809] (-) TimerEvent: {}
+[1.126111] (warehouse_robot) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/warehouse_robot', 'build', '--build-base', '/home/robot/Desktop/Session06/Johnny-Answers-Session06/build/warehouse_robot/build', 'install', '--record', '/home/robot/Desktop/Session06/Johnny-Answers-Session06/build/warehouse_robot/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/robot/Desktop/Session06/Johnny-Answers-Session06/src/warehouse_robot', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'LANGUAGE': 'en_US:', 'USER': 'robot', 'LC_TIME': 'ar_LB.UTF-8', 'XDG_SESSION_TYPE': 'wayland', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/robot', 'OLDPWD': '/home/robot/Desktop/Session06/Johnny-Answers-Session06/src', 'DESKTOP_SESSION': 'ubuntu', 'ROS_PYTHON_VERSION': '3', 'GNOME_SHELL_SESSION_MODE': 'ubuntu', 'GTK_MODULES': 'gail:atk-bridge', 'LC_MONETARY': 'ar_LB.UTF-8', 'DBUS_STARTER_BUS_TYPE': 'session', 'SYSTEMD_EXEC_PID': '2710', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/1000/bus,guid=a3c8a3a0c43b89414915e3f3669b89c9', 'COLORTERM': 'truecolor', 'IM_CONFIG_PHASE': '1', 'WAYLAND_DISPLAY': 'wayland-0', 'COLCON_PREFIX_PATH': '/home/robot/Desktop/Session06/Johnny-Answers-Session06/install', 'ROS_DISTRO': 'humble', 'LOGNAME': 'robot', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'USERNAME': 'robot', 'TERM': 'xterm-256color', 'GNOME_DESKTOP_SESSION_ID': 'this-is-deprecated', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin', 'SESSION_MANAGER': 'local/robot-virtual-machine:@/tmp/.ICE-unix/2710,unix/robot-virtual-machine:/tmp/.ICE-unix/2710', 'XDG_MENU_PREFIX': 'gnome-', 'LC_ADDRESS': 'ar_LB.UTF-8', 'GNOME_TERMINAL_SCREEN': '/org/gnome/Terminal/screen/fbfc0653_563f_4455_bc6a_a9e4abfbbc44', 'GNOME_SETUP_DISPLAY': ':1', 'XDG_RUNTIME_DIR': '/run/user/1000', 'DISPLAY': ':0', 'LANG': 'en_US.UTF-8', 'XDG_CURRENT_DESKTOP': 'ubuntu:GNOME', 'LC_TELEPHONE': 'ar_LB.UTF-8', 'XMODIFIERS': '@im=ibus', 'XDG_SESSION_DESKTOP': 'ubuntu', 'XAUTHORITY': '/run/user/1000/.mutter-Xwaylandauth.43R0Q2', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'GNOME_TERMINAL_SERVICE': ':1.118', 'SSH_AGENT_LAUNCHER': 'gnome-keyring', 'SSH_AUTH_SOCK': '/run/user/1000/keyring/ssh', 'AMENT_PREFIX_PATH': '/home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces:/home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_package:/home/robot/Desktop/Session06/Johnny-Answers-Session06/install/warehouse_robot:/opt/ros/humble', 'SHELL': '/bin/bash', 'LC_NAME': 'ar_LB.UTF-8', 'QT_ACCESSIBILITY': '1', 'GDMSESSION': 'ubuntu', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LC_MEASUREMENT': 'ar_LB.UTF-8', 'LC_IDENTIFICATION': 'ar_LB.UTF-8', 'QT_IM_MODULE': 'ibus', 'PWD': '/home/robot/Desktop/Session06/Johnny-Answers-Session06/build/warehouse_robot', 'LC_ALL': 'en_US.UTF-8', 'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/etc/xdg', 'DBUS_STARTER_ADDRESS': 'unix:path=/run/user/1000/bus,guid=a3c8a3a0c43b89414915e3f3669b89c9', 'XDG_DATA_DIRS': '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop', 'PYTHONPATH': '/home/robot/Desktop/Session06/Johnny-Answers-Session06/build/warehouse_robot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robot/Desktop/Session06/Johnny-Answers-Session06/install/warehouse_robot/lib/python3.10/site-packages:/home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/local/lib/python3.10/dist-packages:/home/robot/Desktop/Session06/Johnny-Answers-Session06/install/warehouse_robot/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'LC_NUMERIC': 'ar_LB.UTF-8', 'LC_PAPER': 'ar_LB.UTF-8', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces:/home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_package'}, 'shell': False}
+[1.141053] (my_interfaces) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[1.209103] (-) TimerEvent: {}
+[1.312753] (-) TimerEvent: {}
+[1.416756] (-) TimerEvent: {}
+[1.502842] (my_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.518528] (-) TimerEvent: {}
+[1.574182] (warehouse_robot) StdoutLine: {'line': b'running egg_info\n'}
+[1.574794] (warehouse_robot) StdoutLine: {'line': b'writing ../../build/warehouse_robot/warehouse_robot.egg-info/PKG-INFO\n'}
+[1.575545] (warehouse_robot) StdoutLine: {'line': b'writing dependency_links to ../../build/warehouse_robot/warehouse_robot.egg-info/dependency_links.txt\n'}
+[1.575826] (warehouse_robot) StdoutLine: {'line': b'writing entry points to ../../build/warehouse_robot/warehouse_robot.egg-info/entry_points.txt\n'}
+[1.576677] (warehouse_robot) StdoutLine: {'line': b'writing requirements to ../../build/warehouse_robot/warehouse_robot.egg-info/requires.txt\n'}
+[1.576873] (warehouse_robot) StdoutLine: {'line': b'writing top-level names to ../../build/warehouse_robot/warehouse_robot.egg-info/top_level.txt\n'}
+[1.579829] (warehouse_robot) StdoutLine: {'line': b"reading manifest file '../../build/warehouse_robot/warehouse_robot.egg-info/SOURCES.txt'\n"}
+[1.582162] (warehouse_robot) StdoutLine: {'line': b"writing manifest file '../../build/warehouse_robot/warehouse_robot.egg-info/SOURCES.txt'\n"}
+[1.582426] (warehouse_robot) StdoutLine: {'line': b'running build\n'}
+[1.582606] (warehouse_robot) StdoutLine: {'line': b'running build_py\n'}
+[1.582960] (warehouse_robot) StdoutLine: {'line': b'copying warehouse_robot/Delivery_Action_Server.py -> /home/robot/Desktop/Session06/Johnny-Answers-Session06/build/warehouse_robot/build/lib/warehouse_robot\n'}
+[1.583374] (warehouse_robot) StdoutLine: {'line': b'running install\n'}
+[1.584523] (warehouse_robot) StdoutLine: {'line': b'running install_lib\n'}
+[1.585385] (warehouse_robot) StdoutLine: {'line': b'copying /home/robot/Desktop/Session06/Johnny-Answers-Session06/build/warehouse_robot/build/lib/warehouse_robot/Delivery_Action_Server.py -> /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/warehouse_robot/lib/python3.10/site-packages/warehouse_robot\n'}
+[1.586423] (warehouse_robot) StdoutLine: {'line': b'byte-compiling /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/warehouse_robot/lib/python3.10/site-packages/warehouse_robot/Delivery_Action_Server.py to Delivery_Action_Server.cpython-310.pyc\n'}
+[1.587688] (warehouse_robot) StdoutLine: {'line': b'running install_data\n'}
+[1.588096] (warehouse_robot) StdoutLine: {'line': b'running install_egg_info\n'}
+[1.592942] (warehouse_robot) StdoutLine: {'line': b"removing '/home/robot/Desktop/Session06/Johnny-Answers-Session06/install/warehouse_robot/lib/python3.10/site-packages/warehouse_robot-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[1.593203] (warehouse_robot) StdoutLine: {'line': b'Copying ../../build/warehouse_robot/warehouse_robot.egg-info to /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/warehouse_robot/lib/python3.10/site-packages/warehouse_robot-0.0.0-py3.10.egg-info\n'}
+[1.593624] (warehouse_robot) StdoutLine: {'line': b'running install_scripts\n'}
+[1.618739] (-) TimerEvent: {}
+[1.628347] (warehouse_robot) StdoutLine: {'line': b'Installing delivery_action script to /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/warehouse_robot/lib/warehouse_robot\n'}
+[1.629452] (warehouse_robot) StdoutLine: {'line': b"writing list of installed files to '/home/robot/Desktop/Session06/Johnny-Answers-Session06/build/warehouse_robot/install.log'\n"}
+[1.671344] (warehouse_robot) CommandEnded: {'returncode': 0}
+[1.691991] (warehouse_robot) JobEnded: {'identifier': 'warehouse_robot', 'rc': 0}
+[1.719494] (-) TimerEvent: {}
+[1.820757] (-) TimerEvent: {}
+[1.921334] (-) TimerEvent: {}
+[1.996998] (my_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.022267] (-) TimerEvent: {}
+[2.040139] (my_interfaces) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[2.087607] (my_interfaces) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[2.087926] (my_interfaces) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[2.088077] (my_interfaces) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[2.124106] (-) TimerEvent: {}
+[2.131686] (my_interfaces) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[2.134788] (my_interfaces) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[2.141997] (my_interfaces) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.224326] (-) TimerEvent: {}
+[2.233404] (my_interfaces) StdoutLine: {'line': b'-- Generating done\n'}
+[2.246283] (my_interfaces) StdoutLine: {'line': b'-- Build files have been written to: /home/robot/Desktop/Session06/Johnny-Answers-Session06/build/my_interfaces\n'}
+[2.307564] (my_interfaces) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[2.324449] (-) TimerEvent: {}
+[2.335296] (my_interfaces) StdoutLine: {'line': b'[  5%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[2.359025] (my_interfaces) StdoutLine: {'line': b'[  5%] Built target ament_cmake_python_copy_my_interfaces\n'}
+[2.424945] (-) TimerEvent: {}
+[2.532694] (-) TimerEvent: {}
+[2.633247] (-) TimerEvent: {}
+[2.734737] (-) TimerEvent: {}
+[2.827557] (my_interfaces) StdoutLine: {'line': b'running egg_info\n'}
+[2.829268] (my_interfaces) StdoutLine: {'line': b'writing my_interfaces.egg-info/PKG-INFO\n'}
+[2.829555] (my_interfaces) StdoutLine: {'line': b'writing dependency_links to my_interfaces.egg-info/dependency_links.txt\n'}
+[2.831885] (my_interfaces) StdoutLine: {'line': b'writing top-level names to my_interfaces.egg-info/top_level.txt\n'}
+[2.833849] (my_interfaces) StdoutLine: {'line': b"reading manifest file 'my_interfaces.egg-info/SOURCES.txt'\n"}
+[2.834879] (my_interfaces) StdoutLine: {'line': b"writing manifest file 'my_interfaces.egg-info/SOURCES.txt'\n"}
+[2.835138] (-) TimerEvent: {}
+[2.886549] (my_interfaces) StdoutLine: {'line': b'[  5%] Built target ament_cmake_python_build_my_interfaces_egg\n'}
+[2.936382] (-) TimerEvent: {}
+[3.039874] (-) TimerEvent: {}
+[3.158736] (-) TimerEvent: {}
+[3.181810] (my_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target my_interfaces__rosidl_generator_c\x1b[0m\n'}
+[3.214990] (my_interfaces) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/my_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_interfaces/action/detail/deliver_item__functions.c.o\x1b[0m\n'}
+[3.215386] (my_interfaces) StdoutLine: {'line': b'[ 10%] \x1b[32mBuilding C object CMakeFiles/my_interfaces__rosidl_generator_c.dir/rosidl_generator_c/my_interfaces/srv/detail/check_stock__functions.c.o\x1b[0m\n'}
+[3.221546] (my_interfaces) StdoutLine: {'line': b'[ 10%] Built target my_interfaces__cpp\n'}
+[3.248562] (my_interfaces) StdoutLine: {'line': b'[ 12%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[3.255335] (my_interfaces) StdoutLine: {'line': b'[ 15%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[3.271379] (-) TimerEvent: {}
+[3.292962] (my_interfaces) StdoutLine: {'line': b'[ 17%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[3.371570] (-) TimerEvent: {}
+[3.472028] (-) TimerEvent: {}
+[3.553009] (my_interfaces) StdoutLine: {'line': b'[ 20%] \x1b[32m\x1b[1mLinking C shared library libmy_interfaces__rosidl_generator_c.so\x1b[0m\n'}
+[3.572151] (-) TimerEvent: {}
+[3.667771] (my_interfaces) StdoutLine: {'line': b'[ 20%] Built target my_interfaces__rosidl_generator_c\n'}
+[3.672252] (-) TimerEvent: {}
+[3.713877] (my_interfaces) StdoutLine: {'line': b'[ 23%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[3.714197] (my_interfaces) StdoutLine: {'line': b'[ 25%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[3.714358] (my_interfaces) StdoutLine: {'line': b'[ 28%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[3.772398] (-) TimerEvent: {}
+[3.872979] (-) TimerEvent: {}
+[3.973408] (-) TimerEvent: {}
+[4.030818] (my_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target my_interfaces__rosidl_typesupport_cpp\x1b[0m\n'}
+[4.073558] (-) TimerEvent: {}
+[4.113829] (my_interfaces) StdoutLine: {'line': b'[ 30%] \x1b[32mBuilding CXX object CMakeFiles/my_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_interfaces/action/deliver_item__type_support.cpp.o\x1b[0m\n'}
+[4.173687] (-) TimerEvent: {}
+[4.271024] (my_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target my_interfaces__rosidl_typesupport_introspection_cpp\x1b[0m\n'}
+[4.273786] (-) TimerEvent: {}
+[4.364286] (my_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target my_interfaces__rosidl_typesupport_fastrtps_cpp\x1b[0m\n'}
+[4.367201] (my_interfaces) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/my_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_interfaces/action/detail/deliver_item__type_support.cpp.o\x1b[0m\n'}
+[4.373889] (-) TimerEvent: {}
+[4.468544] (my_interfaces) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/my_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_interfaces/action/detail/dds_fastrtps/deliver_item__type_support.cpp.o\x1b[0m\n'}
+[4.474006] (-) TimerEvent: {}
+[4.574363] (-) TimerEvent: {}
+[4.686739] (-) TimerEvent: {}
+[4.746246] (my_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target my_interfaces__rosidl_typesupport_c\x1b[0m\n'}
+[4.796880] (-) TimerEvent: {}
+[4.808884] (my_interfaces) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/my_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_interfaces/action/deliver_item__type_support.cpp.o\x1b[0m\n'}
+[4.928400] (-) TimerEvent: {}
+[4.939122] (my_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target my_interfaces__rosidl_typesupport_introspection_c\x1b[0m\n'}
+[4.957485] (my_interfaces) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/my_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/my_interfaces/srv/check_stock__type_support.cpp.o\x1b[0m\n'}
+[4.973557] (my_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target my_interfaces__rosidl_typesupport_fastrtps_c\x1b[0m\n'}
+[4.992656] (my_interfaces) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding C object CMakeFiles/my_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_interfaces/action/detail/deliver_item__type_support.c.o\x1b[0m\n'}
+[5.037098] (-) TimerEvent: {}
+[5.038288] (my_interfaces) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding CXX object CMakeFiles/my_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_interfaces/action/detail/deliver_item__type_support_c.cpp.o\x1b[0m\n'}
+[5.137241] (-) TimerEvent: {}
+[5.141058] (my_interfaces) StdoutLine: {'line': b'[ 48%] \x1b[32m\x1b[1mLinking CXX shared library libmy_interfaces__rosidl_typesupport_c.so\x1b[0m\n'}
+[5.237392] (-) TimerEvent: {}
+[5.248376] (my_interfaces) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding C object CMakeFiles/my_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_interfaces/srv/detail/check_stock__type_support.c.o\x1b[0m\n'}
+[5.333405] (my_interfaces) StdoutLine: {'line': b'[ 51%] Built target my_interfaces__rosidl_typesupport_c\n'}
+[5.337504] (-) TimerEvent: {}
+[5.399092] (my_interfaces) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding CXX object CMakeFiles/my_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/my_interfaces/srv/detail/check_stock__type_support_c.cpp.o\x1b[0m\n'}
+[5.418031] (my_interfaces) StdoutLine: {'line': b'[ 56%] \x1b[32m\x1b[1mLinking C shared library libmy_interfaces__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[5.459075] (-) TimerEvent: {}
+[5.567298] (-) TimerEvent: {}
+[5.598326] (my_interfaces) StdoutLine: {'line': b'[ 56%] Built target my_interfaces__rosidl_typesupport_introspection_c\n'}
+[5.612716] (my_interfaces) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding CXX object CMakeFiles/my_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_interfaces/srv/check_stock__type_support.cpp.o\x1b[0m\n'}
+[5.654157] (my_interfaces) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding CXX object CMakeFiles/my_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/my_interfaces/srv/detail/check_stock__type_support.cpp.o\x1b[0m\n'}
+[5.695260] (-) TimerEvent: {}
+[5.795775] (-) TimerEvent: {}
+[5.896445] (-) TimerEvent: {}
+[6.024716] (-) TimerEvent: {}
+[6.125369] (-) TimerEvent: {}
+[6.226021] (-) TimerEvent: {}
+[6.344847] (my_interfaces) StdoutLine: {'line': b'[ 64%] \x1b[32mBuilding CXX object CMakeFiles/my_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/my_interfaces/srv/detail/dds_fastrtps/check_stock__type_support.cpp.o\x1b[0m\n'}
+[6.345298] (-) TimerEvent: {}
+[6.446884] (my_interfaces) StdoutLine: {'line': b'[ 66%] \x1b[32m\x1b[1mLinking CXX shared library libmy_interfaces__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[6.447251] (-) TimerEvent: {}
+[6.520845] (my_interfaces) StdoutLine: {'line': b'[ 69%] \x1b[32m\x1b[1mLinking CXX shared library libmy_interfaces__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[6.559725] (-) TimerEvent: {}
+[6.618084] (my_interfaces) StdoutLine: {'line': b'[ 69%] Built target my_interfaces__rosidl_typesupport_cpp\n'}
+[6.627864] (my_interfaces) StdoutLine: {'line': b'[ 69%] Built target my_interfaces__rosidl_typesupport_fastrtps_c\n'}
+[6.659949] (-) TimerEvent: {}
+[6.717748] (my_interfaces) StdoutLine: {'line': b'[ 71%] \x1b[32m\x1b[1mLinking CXX shared library libmy_interfaces__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[6.760412] (-) TimerEvent: {}
+[6.864253] (-) TimerEvent: {}
+[6.873473] (my_interfaces) StdoutLine: {'line': b'[ 71%] Built target my_interfaces__rosidl_typesupport_introspection_cpp\n'}
+[6.964815] (-) TimerEvent: {}
+[7.066979] (-) TimerEvent: {}
+[7.152551] (my_interfaces) StdoutLine: {'line': b'[ 74%] \x1b[32m\x1b[1mLinking CXX shared library libmy_interfaces__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[7.168778] (-) TimerEvent: {}
+[7.271130] (-) TimerEvent: {}
+[7.314565] (my_interfaces) StdoutLine: {'line': b'[ 74%] Built target my_interfaces__rosidl_typesupport_fastrtps_cpp\n'}
+[7.371438] (-) TimerEvent: {}
+[7.372978] (my_interfaces) StdoutLine: {'line': b'[ 74%] Built target my_interfaces\n'}
+[7.429175] (my_interfaces) StdoutLine: {'line': b'[ 76%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[7.472072] (-) TimerEvent: {}
+[7.572702] (-) TimerEvent: {}
+[7.674300] (-) TimerEvent: {}
+[7.779475] (-) TimerEvent: {}
+[7.883815] (-) TimerEvent: {}
+[7.984786] (-) TimerEvent: {}
+[8.085482] (-) TimerEvent: {}
+[8.186056] (-) TimerEvent: {}
+[8.286662] (-) TimerEvent: {}
+[8.390176] (-) TimerEvent: {}
+[8.490813] (-) TimerEvent: {}
+[8.591418] (-) TimerEvent: {}
+[8.692015] (-) TimerEvent: {}
+[8.792555] (-) TimerEvent: {}
+[8.893124] (-) TimerEvent: {}
+[8.945807] (my_interfaces) StdoutLine: {'line': b'[ 76%] Built target my_interfaces__py\n'}
+[8.972558] (my_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target my_interfaces__rosidl_generator_py\x1b[0m\n'}
+[9.000229] (-) TimerEvent: {}
+[9.008899] (my_interfaces) StdoutLine: {'line': b'[ 79%] \x1b[32mBuilding C object CMakeFiles/my_interfaces__rosidl_generator_py.dir/rosidl_generator_py/my_interfaces/action/_deliver_item_s.c.o\x1b[0m\n'}
+[9.009271] (my_interfaces) StdoutLine: {'line': b'[ 82%] \x1b[32mBuilding C object CMakeFiles/my_interfaces__rosidl_generator_py.dir/rosidl_generator_py/my_interfaces/srv/_check_stock_s.c.o\x1b[0m\n'}
+[9.100374] (-) TimerEvent: {}
+[9.201035] (-) TimerEvent: {}
+[9.295726] (my_interfaces) StdoutLine: {'line': b'[ 84%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/my_interfaces/libmy_interfaces__rosidl_generator_py.so\x1b[0m\n'}
+[9.302163] (-) TimerEvent: {}
+[9.399350] (my_interfaces) StdoutLine: {'line': b'[ 84%] Built target my_interfaces__rosidl_generator_py\n'}
+[9.403856] (-) TimerEvent: {}
+[9.433777] (my_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target my_interfaces__rosidl_typesupport_introspection_c__pyext\x1b[0m\n'}
+[9.452293] (my_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target my_interfaces__rosidl_typesupport_fastrtps_c__pyext\x1b[0m\n'}
+[9.452796] (my_interfaces) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target my_interfaces__rosidl_typesupport_c__pyext\x1b[0m\n'}
+[9.490047] (my_interfaces) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/my_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/my_interfaces/_my_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[9.503998] (-) TimerEvent: {}
+[9.543944] (my_interfaces) StdoutLine: {'line': b'[ 89%] \x1b[32mBuilding C object CMakeFiles/my_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/my_interfaces/_my_interfaces_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[9.549968] (my_interfaces) StdoutLine: {'line': b'[ 92%] \x1b[32mBuilding C object CMakeFiles/my_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/my_interfaces/_my_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[9.604146] (-) TimerEvent: {}
+[9.704582] (-) TimerEvent: {}
+[9.805205] (-) TimerEvent: {}
+[9.925944] (-) TimerEvent: {}
+[9.968987] (my_interfaces) StdoutLine: {'line': b'[ 94%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/my_interfaces/my_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[10.049021] (my_interfaces) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/my_interfaces/my_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[10.049429] (-) TimerEvent: {}
+[10.050025] (my_interfaces) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/my_interfaces/my_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[10.096951] (my_interfaces) StdoutLine: {'line': b'[100%] Built target my_interfaces__rosidl_typesupport_c__pyext\n'}
+[10.160854] (-) TimerEvent: {}
+[10.221612] (my_interfaces) StdoutLine: {'line': b'[100%] Built target my_interfaces__rosidl_typesupport_fastrtps_c__pyext\n'}
+[10.234930] (my_interfaces) StdoutLine: {'line': b'[100%] Built target my_interfaces__rosidl_typesupport_introspection_c__pyext\n'}
+[10.261077] (-) TimerEvent: {}
+[10.262976] (my_interfaces) CommandEnded: {'returncode': 0}
+[10.361225] (-) TimerEvent: {}
+[10.461644] (-) TimerEvent: {}
+[10.570100] (-) TimerEvent: {}
+[10.670847] (-) TimerEvent: {}
+[10.736280] (my_interfaces) JobProgress: {'identifier': 'my_interfaces', 'progress': 'install'}
+[10.776167] (my_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/robot/Desktop/Session06/Johnny-Answers-Session06/build/my_interfaces'], 'cwd': '/home/robot/Desktop/Session06/Johnny-Answers-Session06/build/my_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_US:'), ('USER', 'robot'), ('LC_TIME', 'ar_LB.UTF-8'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/robot'), ('OLDPWD', '/home/robot/Desktop/Session06/Johnny-Answers-Session06/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'ar_LB.UTF-8'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '2710'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=a3c8a3a0c43b89414915e3f3669b89c9'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/robot/Desktop/Session06/Johnny-Answers-Session06/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'robot'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'robot'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/robot-virtual-machine:@/tmp/.ICE-unix/2710,unix/robot-virtual-machine:/tmp/.ICE-unix/2710'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'ar_LB.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/fbfc0653_563f_4455_bc6a_a9e4abfbbc44'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'ar_LB.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.43R0Q2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.118'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces:/home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_package:/home/robot/Desktop/Session06/Johnny-Answers-Session06/install/warehouse_robot:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'ar_LB.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'ar_LB.UTF-8'), ('LC_IDENTIFICATION', 'ar_LB.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/robot/Desktop/Session06/Johnny-Answers-Session06/build/my_interfaces'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=a3c8a3a0c43b89414915e3f3669b89c9'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/local/lib/python3.10/dist-packages:/home/robot/Desktop/Session06/Johnny-Answers-Session06/install/warehouse_robot/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'ar_LB.UTF-8'), ('LC_PAPER', 'ar_LB.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces:/home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_package:/home/robot/Desktop/Session06/Johnny-Answers-Session06/install/warehouse_robot:/opt/ros/humble')]), 'shell': False}
+[10.777436] (-) TimerEvent: {}
+[10.788892] (my_interfaces) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[10.789188] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/share/ament_index/resource_index/rosidl_interfaces/my_interfaces\n'}
+[10.789497] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/include/my_interfaces/my_interfaces\n'}
+[10.789676] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/include/my_interfaces/my_interfaces/msg\n'}
+[10.789840] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/include/my_interfaces/my_interfaces/msg/rosidl_generator_c__visibility_control.h\n'}
+[10.789998] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/include/my_interfaces/my_interfaces/action\n'}
+[10.790150] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/include/my_interfaces/my_interfaces/action/detail\n'}
+[10.790310] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/include/my_interfaces/my_interfaces/action/detail/deliver_item__struct.h\n'}
+[10.790467] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/include/my_interfaces/my_interfaces/action/detail/deliver_item__type_support.h\n'}
+[10.790834] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/include/my_interfaces/my_interfaces/action/detail/deliver_item__functions.c\n'}
+[10.791013] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/include/my_interfaces/my_interfaces/action/detail/deliver_item__functions.h\n'}
+[10.791321] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/include/my_interfaces/my_interfaces/action/deliver_item.h\n'}
+[10.791498] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/include/my_interfaces/my_interfaces/srv\n'}
+[10.791666] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/include/my_interfaces/my_interfaces/srv/detail\n'}
+[10.791808] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/include/my_interfaces/my_interfaces/srv/detail/check_stock__functions.h\n'}
+[10.792000] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/include/my_interfaces/my_interfaces/srv/detail/check_stock__functions.c\n'}
+[10.792137] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/include/my_interfaces/my_interfaces/srv/detail/check_stock__type_support.h\n'}
+[10.792276] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/include/my_interfaces/my_interfaces/srv/detail/check_stock__struct.h\n'}
+[10.792412] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/include/my_interfaces/my_interfaces/srv/check_stock.h\n'}
+[10.792673] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/share/my_interfaces/environment/library_path.sh\n'}
+[10.793069] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/share/my_interfaces/environment/library_path.dsv\n'}
+[10.793293] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/lib/libmy_interfaces__rosidl_generator_c.so\n'}
+[10.793441] (my_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/lib/libmy_interfaces__rosidl_generator_c.so" to ""\n'}
+[10.793720] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/include/my_interfaces/my_interfaces\n'}
+[10.793915] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/include/my_interfaces/my_interfaces/msg\n'}
+[10.794056] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/include/my_interfaces/my_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[10.794195] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/include/my_interfaces/my_interfaces/action\n'}
+[10.794338] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/include/my_interfaces/my_interfaces/action/detail\n'}
+[10.794522] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/include/my_interfaces/my_interfaces/action/detail/deliver_item__rosidl_typesupport_fastrtps_c.h\n'}
+[10.794675] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/include/my_interfaces/my_interfaces/srv\n'}
+[10.794823] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/include/my_interfaces/my_interfaces/srv/detail\n'}
+[10.794962] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/include/my_interfaces/my_interfaces/srv/detail/check_stock__rosidl_typesupport_fastrtps_c.h\n'}
+[10.795102] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/lib/libmy_interfaces__rosidl_typesupport_fastrtps_c.so\n'}
+[10.798834] (my_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/lib/libmy_interfaces__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[10.799046] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/include/my_interfaces/my_interfaces\n'}
+[10.799210] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/include/my_interfaces/my_interfaces/msg\n'}
+[10.799353] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/include/my_interfaces/my_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[10.799489] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/include/my_interfaces/my_interfaces/action\n'}
+[10.799623] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/include/my_interfaces/my_interfaces/action/detail\n'}
+[10.799757] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/include/my_interfaces/my_interfaces/action/detail/deliver_item__type_support.c\n'}
+[10.799919] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/include/my_interfaces/my_interfaces/action/detail/deliver_item__rosidl_typesupport_introspection_c.h\n'}
+[10.800119] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/include/my_interfaces/my_interfaces/srv\n'}
+[10.800256] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/include/my_interfaces/my_interfaces/srv/detail\n'}
+[10.800394] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/include/my_interfaces/my_interfaces/srv/detail/check_stock__rosidl_typesupport_introspection_c.h\n'}
+[10.800663] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/include/my_interfaces/my_interfaces/srv/detail/check_stock__type_support.c\n'}
+[10.800855] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/lib/libmy_interfaces__rosidl_typesupport_introspection_c.so\n'}
+[10.801005] (my_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/lib/libmy_interfaces__rosidl_typesupport_introspection_c.so" to ""\n'}
+[10.801144] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/lib/libmy_interfaces__rosidl_typesupport_c.so\n'}
+[10.811088] (my_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/lib/libmy_interfaces__rosidl_typesupport_c.so" to ""\n'}
+[10.811464] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/include/my_interfaces/my_interfaces\n'}
+[10.811644] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/include/my_interfaces/my_interfaces/action\n'}
+[10.811798] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/include/my_interfaces/my_interfaces/action/deliver_item.hpp\n'}
+[10.812011] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/include/my_interfaces/my_interfaces/action/detail\n'}
+[10.812193] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/include/my_interfaces/my_interfaces/action/detail/deliver_item__builder.hpp\n'}
+[10.812352] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/include/my_interfaces/my_interfaces/action/detail/deliver_item__struct.hpp\n'}
+[10.812500] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/include/my_interfaces/my_interfaces/action/detail/deliver_item__traits.hpp\n'}
+[10.812711] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/include/my_interfaces/my_interfaces/srv\n'}
+[10.812915] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/include/my_interfaces/my_interfaces/srv/detail\n'}
+[10.813104] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/include/my_interfaces/my_interfaces/srv/detail/check_stock__traits.hpp\n'}
+[10.813312] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/include/my_interfaces/my_interfaces/srv/detail/check_stock__builder.hpp\n'}
+[10.813524] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/include/my_interfaces/my_interfaces/srv/detail/check_stock__struct.hpp\n'}
+[10.813839] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/include/my_interfaces/my_interfaces/srv/check_stock.hpp\n'}
+[10.814035] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/include/my_interfaces/my_interfaces\n'}
+[10.814237] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/include/my_interfaces/my_interfaces/msg\n'}
+[10.814531] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/include/my_interfaces/my_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[10.814738] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/include/my_interfaces/my_interfaces/action\n'}
+[10.814930] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/include/my_interfaces/my_interfaces/action/detail\n'}
+[10.815118] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/include/my_interfaces/my_interfaces/action/detail/deliver_item__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[10.815315] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/include/my_interfaces/my_interfaces/action/detail/dds_fastrtps\n'}
+[10.816946] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/include/my_interfaces/my_interfaces/srv\n'}
+[10.817103] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/include/my_interfaces/my_interfaces/srv/detail\n'}
+[10.817251] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/include/my_interfaces/my_interfaces/srv/detail/check_stock__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[10.817416] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/include/my_interfaces/my_interfaces/srv/detail/dds_fastrtps\n'}
+[10.817565] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/lib/libmy_interfaces__rosidl_typesupport_fastrtps_cpp.so\n'}
+[10.817903] (my_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/lib/libmy_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[10.818059] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/include/my_interfaces/my_interfaces\n'}
+[10.818226] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/include/my_interfaces/my_interfaces/action\n'}
+[10.818367] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/include/my_interfaces/my_interfaces/action/detail\n'}
+[10.818554] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/include/my_interfaces/my_interfaces/action/detail/deliver_item__type_support.cpp\n'}
+[10.818728] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/include/my_interfaces/my_interfaces/action/detail/deliver_item__rosidl_typesupport_introspection_cpp.hpp\n'}
+[10.818870] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/include/my_interfaces/my_interfaces/srv\n'}
+[10.819008] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/include/my_interfaces/my_interfaces/srv/detail\n'}
+[10.819147] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/include/my_interfaces/my_interfaces/srv/detail/check_stock__rosidl_typesupport_introspection_cpp.hpp\n'}
+[10.819412] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/include/my_interfaces/my_interfaces/srv/detail/check_stock__type_support.cpp\n'}
+[10.819578] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/lib/libmy_interfaces__rosidl_typesupport_introspection_cpp.so\n'}
+[10.819741] (my_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/lib/libmy_interfaces__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[10.819885] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/lib/libmy_interfaces__rosidl_typesupport_cpp.so\n'}
+[10.831961] (my_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/lib/libmy_interfaces__rosidl_typesupport_cpp.so" to ""\n'}
+[10.832336] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/share/my_interfaces/environment/pythonpath.sh\n'}
+[10.832587] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/share/my_interfaces/environment/pythonpath.dsv\n'}
+[10.832980] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/local/lib/python3.10/dist-packages/my_interfaces-0.0.0-py3.10.egg-info\n'}
+[10.833276] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/local/lib/python3.10/dist-packages/my_interfaces-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[10.833661] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/local/lib/python3.10/dist-packages/my_interfaces-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[10.834090] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/local/lib/python3.10/dist-packages/my_interfaces-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[10.834852] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/local/lib/python3.10/dist-packages/my_interfaces-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[10.835092] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/local/lib/python3.10/dist-packages/my_interfaces\n'}
+[10.835385] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/local/lib/python3.10/dist-packages/my_interfaces/_my_interfaces_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[10.835774] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/local/lib/python3.10/dist-packages/my_interfaces/_my_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[10.839379] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/local/lib/python3.10/dist-packages/my_interfaces/my_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[10.839706] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/local/lib/python3.10/dist-packages/my_interfaces/my_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[10.839886] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/local/lib/python3.10/dist-packages/my_interfaces/_my_interfaces_s.ep.rosidl_typesupport_c.c\n'}
+[10.840158] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/local/lib/python3.10/dist-packages/my_interfaces/action\n'}
+[10.840328] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/local/lib/python3.10/dist-packages/my_interfaces/action/_deliver_item.py\n'}
+[10.840555] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/local/lib/python3.10/dist-packages/my_interfaces/action/_deliver_item_s.c\n'}
+[10.840805] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/local/lib/python3.10/dist-packages/my_interfaces/action/__init__.py\n'}
+[10.840972] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/local/lib/python3.10/dist-packages/my_interfaces/libmy_interfaces__rosidl_generator_py.so\n'}
+[10.841120] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/local/lib/python3.10/dist-packages/my_interfaces/my_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[10.841376] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/local/lib/python3.10/dist-packages/my_interfaces/__init__.py\n'}
+[10.841630] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/local/lib/python3.10/dist-packages/my_interfaces/srv\n'}
+[10.841900] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/local/lib/python3.10/dist-packages/my_interfaces/srv/_check_stock.py\n'}
+[10.842297] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/local/lib/python3.10/dist-packages/my_interfaces/srv/_check_stock_s.c\n'}
+[10.842774] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/local/lib/python3.10/dist-packages/my_interfaces/srv/__init__.py\n'}
+[10.877579] (-) TimerEvent: {}
+[10.929413] (my_interfaces) StdoutLine: {'line': b"Listing '/home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/local/lib/python3.10/dist-packages/my_interfaces'...\n"}
+[10.929840] (my_interfaces) StdoutLine: {'line': b"Compiling '/home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/local/lib/python3.10/dist-packages/my_interfaces/__init__.py'...\n"}
+[10.930047] (my_interfaces) StdoutLine: {'line': b"Listing '/home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/local/lib/python3.10/dist-packages/my_interfaces/action'...\n"}
+[10.930222] (my_interfaces) StdoutLine: {'line': b"Compiling '/home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/local/lib/python3.10/dist-packages/my_interfaces/action/__init__.py'...\n"}
+[10.930470] (my_interfaces) StdoutLine: {'line': b"Compiling '/home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/local/lib/python3.10/dist-packages/my_interfaces/action/_deliver_item.py'...\n"}
+[10.930653] (my_interfaces) StdoutLine: {'line': b"Listing '/home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/local/lib/python3.10/dist-packages/my_interfaces/srv'...\n"}
+[10.930817] (my_interfaces) StdoutLine: {'line': b"Compiling '/home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/local/lib/python3.10/dist-packages/my_interfaces/srv/__init__.py'...\n"}
+[10.930979] (my_interfaces) StdoutLine: {'line': b"Compiling '/home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/local/lib/python3.10/dist-packages/my_interfaces/srv/_check_stock.py'...\n"}
+[10.936276] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/local/lib/python3.10/dist-packages/my_interfaces/my_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[10.936900] (my_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/local/lib/python3.10/dist-packages/my_interfaces/my_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[10.937751] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/local/lib/python3.10/dist-packages/my_interfaces/my_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[10.939152] (my_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/local/lib/python3.10/dist-packages/my_interfaces/my_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[10.940075] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/local/lib/python3.10/dist-packages/my_interfaces/my_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[10.941676] (my_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/local/lib/python3.10/dist-packages/my_interfaces/my_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[10.942669] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/lib/libmy_interfaces__rosidl_generator_py.so\n'}
+[10.944330] (my_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/lib/libmy_interfaces__rosidl_generator_py.so" to ""\n'}
+[10.944651] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/share/my_interfaces/action/DeliverItem.idl\n'}
+[10.944924] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/share/my_interfaces/srv/CheckStock.idl\n'}
+[10.947697] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/share/my_interfaces/action/DeliverItem.action\n'}
+[10.947980] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/share/my_interfaces/srv/CheckStock.srv\n'}
+[10.948421] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/share/my_interfaces/srv/CheckStock_Request.msg\n'}
+[10.948969] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/share/my_interfaces/srv/CheckStock_Response.msg\n'}
+[10.949414] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/share/ament_index/resource_index/package_run_dependencies/my_interfaces\n'}
+[10.949667] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/share/ament_index/resource_index/parent_prefix_path/my_interfaces\n'}
+[10.949905] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/share/my_interfaces/environment/ament_prefix_path.sh\n'}
+[10.950136] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/share/my_interfaces/environment/ament_prefix_path.dsv\n'}
+[10.950535] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/share/my_interfaces/environment/path.sh\n'}
+[10.950765] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/share/my_interfaces/environment/path.dsv\n'}
+[10.951177] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/share/my_interfaces/local_setup.bash\n'}
+[10.951403] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/share/my_interfaces/local_setup.sh\n'}
+[10.951637] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/share/my_interfaces/local_setup.zsh\n'}
+[10.951849] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/share/my_interfaces/local_setup.dsv\n'}
+[10.952288] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/share/my_interfaces/package.dsv\n'}
+[10.952696] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/share/ament_index/resource_index/packages/my_interfaces\n'}
+[10.953020] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/share/my_interfaces/cmake/export_my_interfaces__rosidl_generator_cExport.cmake\n'}
+[10.953254] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/share/my_interfaces/cmake/export_my_interfaces__rosidl_generator_cExport-noconfig.cmake\n'}
+[10.953752] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/share/my_interfaces/cmake/export_my_interfaces__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[10.954003] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/share/my_interfaces/cmake/export_my_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[10.954266] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/share/my_interfaces/cmake/my_interfaces__rosidl_typesupport_introspection_cExport.cmake\n'}
+[10.954493] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/share/my_interfaces/cmake/my_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[10.954741] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/share/my_interfaces/cmake/my_interfaces__rosidl_typesupport_cExport.cmake\n'}
+[10.954971] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/share/my_interfaces/cmake/my_interfaces__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[10.955229] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/share/my_interfaces/cmake/export_my_interfaces__rosidl_generator_cppExport.cmake\n'}
+[10.955514] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/share/my_interfaces/cmake/export_my_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[10.955743] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/share/my_interfaces/cmake/export_my_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[10.955998] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/share/my_interfaces/cmake/my_interfaces__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[10.956235] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/share/my_interfaces/cmake/my_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[10.956513] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/share/my_interfaces/cmake/my_interfaces__rosidl_typesupport_cppExport.cmake\n'}
+[10.956766] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/share/my_interfaces/cmake/my_interfaces__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[10.957028] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/share/my_interfaces/cmake/export_my_interfaces__rosidl_generator_pyExport.cmake\n'}
+[10.957268] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/share/my_interfaces/cmake/export_my_interfaces__rosidl_generator_pyExport-noconfig.cmake\n'}
+[10.958201] (my_interfaces) StdoutLine: {'line': b'-- Installing: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/share/my_interfaces/cmake/rosidl_cmake-extras.cmake\n'}
+[10.958492] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/share/my_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[10.958782] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/share/my_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[10.968355] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/share/my_interfaces/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[10.968872] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/share/my_interfaces/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[10.969122] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/share/my_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[10.974791] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/share/my_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[10.974986] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/share/my_interfaces/cmake/my_interfacesConfig.cmake\n'}
+[10.975156] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/share/my_interfaces/cmake/my_interfacesConfig-version.cmake\n'}
+[10.975411] (my_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/my_interfaces/share/my_interfaces/package.xml\n'}
+[10.975591] (my_interfaces) CommandEnded: {'returncode': 0}
+[10.986304] (-) TimerEvent: {}
+[11.087856] (-) TimerEvent: {}
+[11.188771] (-) TimerEvent: {}
+[11.291122] (-) TimerEvent: {}
+[11.391679] (-) TimerEvent: {}
+[11.421211] (my_interfaces) JobEnded: {'identifier': 'my_interfaces', 'rc': 0}
+[11.422141] (-) EventReactorShutdown: {}

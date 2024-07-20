@@ -20,7 +20,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-             'delivery_action = warehouse_robot.Delivery_Action_Server:main',
+            'delivery_action = warehouse_robot.Delivery_Action_Server:main',
+            'stock_server = warehouse_robot.stock_checker:main',
         ],
     },
 )

@@ -15,6 +15,10 @@ set(CMAKE_MULTIPLE_OUTPUT_PAIRS
   "/home/robot/Desktop/Session06/Johnny-Answers-Session06/build/my_interfaces/rosidl_generator_cpp/my_interfaces/action/detail/deliver_item__builder.hpp" "/home/robot/Desktop/Session06/Johnny-Answers-Session06/build/my_interfaces/rosidl_generator_cpp/my_interfaces/action/deliver_item.hpp"
   "/home/robot/Desktop/Session06/Johnny-Answers-Session06/build/my_interfaces/rosidl_generator_cpp/my_interfaces/action/detail/deliver_item__struct.hpp" "/home/robot/Desktop/Session06/Johnny-Answers-Session06/build/my_interfaces/rosidl_generator_cpp/my_interfaces/action/deliver_item.hpp"
   "/home/robot/Desktop/Session06/Johnny-Answers-Session06/build/my_interfaces/rosidl_generator_cpp/my_interfaces/action/detail/deliver_item__traits.hpp" "/home/robot/Desktop/Session06/Johnny-Answers-Session06/build/my_interfaces/rosidl_generator_cpp/my_interfaces/action/deliver_item.hpp"
+  "/home/robot/Desktop/Session06/Johnny-Answers-Session06/build/my_interfaces/rosidl_generator_cpp/my_interfaces/srv/check_stock.hpp" "/home/robot/Desktop/Session06/Johnny-Answers-Session06/build/my_interfaces/rosidl_generator_cpp/my_interfaces/action/deliver_item.hpp"
+  "/home/robot/Desktop/Session06/Johnny-Answers-Session06/build/my_interfaces/rosidl_generator_cpp/my_interfaces/srv/detail/check_stock__builder.hpp" "/home/robot/Desktop/Session06/Johnny-Answers-Session06/build/my_interfaces/rosidl_generator_cpp/my_interfaces/action/deliver_item.hpp"
+  "/home/robot/Desktop/Session06/Johnny-Answers-Session06/build/my_interfaces/rosidl_generator_cpp/my_interfaces/srv/detail/check_stock__struct.hpp" "/home/robot/Desktop/Session06/Johnny-Answers-Session06/build/my_interfaces/rosidl_generator_cpp/my_interfaces/action/deliver_item.hpp"
+  "/home/robot/Desktop/Session06/Johnny-Answers-Session06/build/my_interfaces/rosidl_generator_cpp/my_interfaces/srv/detail/check_stock__traits.hpp" "/home/robot/Desktop/Session06/Johnny-Answers-Session06/build/my_interfaces/rosidl_generator_cpp/my_interfaces/action/deliver_item.hpp"
   )
 
 

@@ -10,5 +10,8 @@ colcon build --packages-select <name-of-pkg>
 
 ros2 action send_goal /deliver_item my_interfaces/action/DeliverItem "{item_name: 'Battikh', quantity: 3}" -f
 
+ros2 service call /check_stock warehouse_robot/srv/CheckStock "{item_name: 'item1'}"
+
+
 
 

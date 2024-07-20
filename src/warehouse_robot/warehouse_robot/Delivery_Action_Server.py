@@ -18,6 +18,8 @@ class WarehouseRobot(Node):
             goal_callback= self.goal_callback,
             cancel_callback= self.cancel_callback
         )
+        self.get_logger().info(f'DELIVERING ACTION SERVER START')
+
 
     def goal_callback(self, goal_request):
         self.get_logger().info('Received goal request')

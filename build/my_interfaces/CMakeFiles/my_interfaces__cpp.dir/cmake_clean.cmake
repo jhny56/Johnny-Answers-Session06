@@ -4,6 +4,10 @@ file(REMOVE_RECURSE
   "rosidl_generator_cpp/my_interfaces/action/detail/deliver_item__builder.hpp"
   "rosidl_generator_cpp/my_interfaces/action/detail/deliver_item__struct.hpp"
   "rosidl_generator_cpp/my_interfaces/action/detail/deliver_item__traits.hpp"
+  "rosidl_generator_cpp/my_interfaces/srv/check_stock.hpp"
+  "rosidl_generator_cpp/my_interfaces/srv/detail/check_stock__builder.hpp"
+  "rosidl_generator_cpp/my_interfaces/srv/detail/check_stock__struct.hpp"
+  "rosidl_generator_cpp/my_interfaces/srv/detail/check_stock__traits.hpp"
 )
 
 # Per-language clean rules from dependency scanning.

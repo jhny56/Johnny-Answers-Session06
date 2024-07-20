@@ -18,6 +18,8 @@ class WarehouseRobot(Node):
             goal_callback= self.goal_callback,
             cancel_callback= self.cancel_callback
         )
+        self.get_logger().info(f'DELIVERING ACTION SERVER START')
+
 
     def goal_callback(self, goal_request):
         self.get_logger().info('Received goal request')
@@ -42,7 +44,7 @@ class WarehouseRobot(Node):
                 feedback_msg.status = f'In progress: {i * 10}%'
                 self.get_logger().info(feedback_msg.status)
                 goal_handle.publish_feedback(feedback_msg)
-                time.sleep(0.5)  # Simulate delivery time
+                time.sleep(0.5)  
 
         goal_handle.succeed()
 
