@@ -8,6 +8,8 @@ from rclpy.executors import MultiThreadedExecutor
 from my_interfaces.action import DeliverItem
 from my_interfaces.srv import AddOrUpdateStock, CheckStock
 import threading
+from concurrent.futures import ThreadPoolExecutor
+import asyncio
 
 class WarehouseRobot(Node):
 
@@ -33,6 +35,7 @@ class WarehouseRobot(Node):
             cancel_callback= self.cancel_callback
         )
 
+        
 
         self.get_logger().info(f'DELIVERING ACTION SERVER START')
 
@@ -46,35 +49,41 @@ class WarehouseRobot(Node):
 
         return self.futuresend.result()
 
-    def send_get_request(self, item_name):
+    async def send_get_request(self, item_name):
     
         req = CheckStock.Request()
         req.item_name = item_name
 
-        self.future = self.cli_get.call_async(req)
-        rclpy.spin_until_future_complete(self, self.future)
+        future = await self.cli_get.call_async(req)
+        # future.add_done_callback(self.done_callback)
+        return future
+    
+    def done_callback(self, future):
+        self.get_logger().info('CALL BACK ')
 
-        return self.future.result()
+        if future.result().stock_level:
+            return GoalResponse.ACCEPT
 
     def goal_callback(self, goal_request):
         self.get_logger().info('Received goal request')
+        loop = asyncio.get_event_loop()
+        future = asyncio.run_coroutine_threadsafe(self.async_goal_callback(goal_request), loop)
+        return future.result()
+        
+    async def async_goal_callback(self, goal_request):
         self.quantity = goal_request.quantity
         self.item_name = goal_request.item_name
 
-        # response = self.send_get_request(self.item_name)
-        threading.Thread(target=self.process_goal_request, args=(goal_request,)).start()
-        return GoalResponse.ACCEPT
+        response = await self.send_get_request(self.item_name)
 
-    def process_goal_request(self, goal_request):
-        self.get_logger().info('process goal request run')
-        getresponse = self.send_get_request(self.item_name)
-        if getresponse and getresponse.stock_level != 0 and getresponse.stock_level >= self.quantity and self.quantity > 0:
-            self.get_logger().info(' goal request ACCEPT')
-
-            self.stock_level = getresponse.stock_level
+        if response.stock_level != 0 and response.stock_level >= self.quantity and self.quantity > 0:
+            self.stock_level = response.stock_level
+            self.get_logger().info('Goal request ACCEPT')
+            return GoalResponse.ACCEPT
         else:
-            self.get_logger().info(' goal request ABORT')
-            goal_request.goal_handle.abort()
+            self.get_logger().info('Goal request REJECT')
+            return GoalResponse.REJECT
+    
 
     def cancel_callback(self, goal_handle):
         self.get_logger().info('Received cancel request')
@@ -117,12 +126,23 @@ def main(args=None):
     response = node.send_add_update_request('item3', 50)
     node.get_logger().info(f'Response: {response.message}')
 
-    node.send_get_request('item1')
-    node.send_get_request('item2')
-    node.send_get_request('item3')
+    # node.send_get_request('item1')
+    # node.send_get_request('item2')
+    # node.send_get_request('item3')
 
-    rclpy.spin(node)
-    rclpy.shutdown()
+    # Create a multi-threaded executor
+    executor = MultiThreadedExecutor(num_threads=4)
+    executor.add_node(node)
+    
+    try:
+        executor.spin()
+    finally:
+        executor.shutdown()
+        node.destroy_node()
+        rclpy.shutdown()
+
+    # rclpy.spin(node)
+    # rclpy.shutdown()
 
 if __name__ == '__main__':
     main()
