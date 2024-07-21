@@ -70,6 +70,9 @@ CMakeFiles/my_interfaces: /home/robot/Desktop/Session06/Johnny-Answers-Session06
 CMakeFiles/my_interfaces: /home/robot/Desktop/Session06/Johnny-Answers-Session06/src/my_interfaces/srv/CheckStock.srv
 CMakeFiles/my_interfaces: rosidl_cmake/srv/CheckStock_Request.msg
 CMakeFiles/my_interfaces: rosidl_cmake/srv/CheckStock_Response.msg
+CMakeFiles/my_interfaces: /home/robot/Desktop/Session06/Johnny-Answers-Session06/src/my_interfaces/srv/AddOrUpdateStock.srv
+CMakeFiles/my_interfaces: rosidl_cmake/srv/AddOrUpdateStock_Request.msg
+CMakeFiles/my_interfaces: rosidl_cmake/srv/AddOrUpdateStock_Response.msg
 CMakeFiles/my_interfaces: /opt/ros/humble/share/action_msgs/msg/GoalInfo.idl
 CMakeFiles/my_interfaces: /opt/ros/humble/share/action_msgs/msg/GoalStatus.idl
 CMakeFiles/my_interfaces: /opt/ros/humble/share/action_msgs/msg/GoalStatusArray.idl

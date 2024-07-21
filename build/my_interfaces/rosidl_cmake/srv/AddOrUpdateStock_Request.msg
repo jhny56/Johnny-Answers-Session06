@@ -1,0 +1,2 @@
+string item_name
+int32 stock_level

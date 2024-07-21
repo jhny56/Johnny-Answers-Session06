@@ -15,7 +15,11 @@ module my_interfaces {
     @verbatim (language="comment", text=
       "Response")
     struct CheckStock_Response {
+      boolean success;
+
       int32 stock_level;
+
+      string message;
     };
   };
 };

@@ -1,11 +1,14 @@
 file(REMOVE_RECURSE
   "CMakeFiles/my_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_interfaces/action/deliver_item__type_support.cpp.o"
   "CMakeFiles/my_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_interfaces/action/deliver_item__type_support.cpp.o.d"
+  "CMakeFiles/my_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_interfaces/srv/add_or_update_stock__type_support.cpp.o"
+  "CMakeFiles/my_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_interfaces/srv/add_or_update_stock__type_support.cpp.o.d"
   "CMakeFiles/my_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_interfaces/srv/check_stock__type_support.cpp.o"
   "CMakeFiles/my_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/my_interfaces/srv/check_stock__type_support.cpp.o.d"
   "libmy_interfaces__rosidl_typesupport_cpp.pdb"
   "libmy_interfaces__rosidl_typesupport_cpp.so"
   "rosidl_typesupport_cpp/my_interfaces/action/deliver_item__type_support.cpp"
+  "rosidl_typesupport_cpp/my_interfaces/srv/add_or_update_stock__type_support.cpp"
   "rosidl_typesupport_cpp/my_interfaces/srv/check_stock__type_support.cpp"
 )
 

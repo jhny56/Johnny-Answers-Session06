@@ -104,6 +104,11 @@ ROSIDL_TYPESUPPORT_INTERFACE__MESSAGE_SYMBOL_NAME(rosidl_typesupport_introspecti
 // #include "my_interfaces/srv/detail/check_stock__struct.h"
 
 
+// Include directives for member types
+// Member `message`
+// already included above
+// #include "rosidl_runtime_c/string_functions.h"
+
 #ifdef __cplusplus
 extern "C"
 {
@@ -123,7 +128,24 @@ void my_interfaces__srv__CheckStock_Response__rosidl_typesupport_introspection_c
   my_interfaces__srv__CheckStock_Response__fini(message_memory);
 }
 
-static rosidl_typesupport_introspection_c__MessageMember my_interfaces__srv__CheckStock_Response__rosidl_typesupport_introspection_c__CheckStock_Response_message_member_array[1] = {
+static rosidl_typesupport_introspection_c__MessageMember my_interfaces__srv__CheckStock_Response__rosidl_typesupport_introspection_c__CheckStock_Response_message_member_array[3] = {
+  {
+    "success",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_BOOLEAN,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(my_interfaces__srv__CheckStock_Response, success),  // bytes offset in struct
+    NULL,  // default value
+    NULL,  // size() function pointer
+    NULL,  // get_const(index) function pointer
+    NULL,  // get(index) function pointer
+    NULL,  // fetch(index, &value) function pointer
+    NULL,  // assign(index, value) function pointer
+    NULL  // resize(index) function pointer
+  },
   {
     "stock_level",  // name
     rosidl_typesupport_introspection_c__ROS_TYPE_INT32,  // type
@@ -140,13 +162,30 @@ static rosidl_typesupport_introspection_c__MessageMember my_interfaces__srv__Che
     NULL,  // fetch(index, &value) function pointer
     NULL,  // assign(index, value) function pointer
     NULL  // resize(index) function pointer
+  },
+  {
+    "message",  // name
+    rosidl_typesupport_introspection_c__ROS_TYPE_STRING,  // type
+    0,  // upper bound of string
+    NULL,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(my_interfaces__srv__CheckStock_Response, message),  // bytes offset in struct
+    NULL,  // default value
+    NULL,  // size() function pointer
+    NULL,  // get_const(index) function pointer
+    NULL,  // get(index) function pointer
+    NULL,  // fetch(index, &value) function pointer
+    NULL,  // assign(index, value) function pointer
+    NULL  // resize(index) function pointer
   }
 };
 
 static const rosidl_typesupport_introspection_c__MessageMembers my_interfaces__srv__CheckStock_Response__rosidl_typesupport_introspection_c__CheckStock_Response_message_members = {
   "my_interfaces__srv",  // message namespace
   "CheckStock_Response",  // message name
-  1,  // number of fields
+  3,  // number of fields
   sizeof(my_interfaces__srv__CheckStock_Response),
   my_interfaces__srv__CheckStock_Response__rosidl_typesupport_introspection_c__CheckStock_Response_message_member_array,  // message members
   my_interfaces__srv__CheckStock_Response__rosidl_typesupport_introspection_c__CheckStock_Response_init_function,  // function to initialize message memory (memory has to be allocated)

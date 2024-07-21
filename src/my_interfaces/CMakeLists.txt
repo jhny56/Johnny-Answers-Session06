@@ -30,6 +30,7 @@ find_package(rosidl_default_generators REQUIRED)
 rosidl_generate_interfaces(${PROJECT_NAME}
   "action/DeliverItem.action"
   "srv/CheckStock.srv"
+  "srv/AddOrUpdateStock.srv"
 )
 
 

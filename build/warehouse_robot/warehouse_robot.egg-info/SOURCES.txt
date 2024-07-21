@@ -8,6 +8,7 @@ setup.py
 ../../build/warehouse_robot/warehouse_robot.egg-info/requires.txt
 ../../build/warehouse_robot/warehouse_robot.egg-info/top_level.txt
 ../../build/warehouse_robot/warehouse_robot.egg-info/zip-safe
+database/init_db.py
 launch/warehouse_robot_launch.py
 resource/warehouse_robot
 test/test_copyright.py
@@ -18,3 +19,4 @@ warehouse_robot/__init__.py
 warehouse_robot/delivery_client.py
 warehouse_robot/stock_checker.py
 warehouse_robot/stock_checker_client.py
+warehouse_robot/stock_manager.py

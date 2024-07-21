@@ -117,10 +117,24 @@ inline void to_flow_style_yaml(
   std::ostream & out)
 {
   out << "{";
+  // member: success
+  {
+    out << "success: ";
+    rosidl_generator_traits::value_to_yaml(msg.success, out);
+    out << ", ";
+  }
+
   // member: stock_level
   {
     out << "stock_level: ";
     rosidl_generator_traits::value_to_yaml(msg.stock_level, out);
+    out << ", ";
+  }
+
+  // member: message
+  {
+    out << "message: ";
+    rosidl_generator_traits::value_to_yaml(msg.message, out);
   }
   out << "}";
 }  // NOLINT(readability/fn_size)
@@ -129,6 +143,16 @@ inline void to_block_style_yaml(
   const CheckStock_Response & msg,
   std::ostream & out, size_t indentation = 0)
 {
+  // member: success
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    out << "success: ";
+    rosidl_generator_traits::value_to_yaml(msg.success, out);
+    out << "\n";
+  }
+
   // member: stock_level
   {
     if (indentation > 0) {
@@ -136,6 +160,16 @@ inline void to_block_style_yaml(
     }
     out << "stock_level: ";
     rosidl_generator_traits::value_to_yaml(msg.stock_level, out);
+    out << "\n";
+  }
+
+  // member: message
+  {
+    if (indentation > 0) {
+      out << std::string(indentation, ' ');
+    }
+    out << "message: ";
+    rosidl_generator_traits::value_to_yaml(msg.message, out);
     out << "\n";
   }
 }  // NOLINT(readability/fn_size)
@@ -186,11 +220,11 @@ inline const char * name<my_interfaces::srv::CheckStock_Response>()
 
 template<>
 struct has_fixed_size<my_interfaces::srv::CheckStock_Response>
-  : std::integral_constant<bool, true> {};
+  : std::integral_constant<bool, false> {};
 
 template<>
 struct has_bounded_size<my_interfaces::srv::CheckStock_Response>
-  : std::integral_constant<bool, true> {};
+  : std::integral_constant<bool, false> {};
 
 template<>
 struct is_message<my_interfaces::srv::CheckStock_Response>

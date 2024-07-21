@@ -1,12 +1,16 @@
 file(REMOVE_RECURSE
   "CMakeFiles/my_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_interfaces/action/detail/deliver_item__type_support.c.o"
   "CMakeFiles/my_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_interfaces/action/detail/deliver_item__type_support.c.o.d"
+  "CMakeFiles/my_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_interfaces/srv/detail/add_or_update_stock__type_support.c.o"
+  "CMakeFiles/my_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_interfaces/srv/detail/add_or_update_stock__type_support.c.o.d"
   "CMakeFiles/my_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_interfaces/srv/detail/check_stock__type_support.c.o"
   "CMakeFiles/my_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/my_interfaces/srv/detail/check_stock__type_support.c.o.d"
   "libmy_interfaces__rosidl_typesupport_introspection_c.pdb"
   "libmy_interfaces__rosidl_typesupport_introspection_c.so"
   "rosidl_typesupport_introspection_c/my_interfaces/action/detail/deliver_item__rosidl_typesupport_introspection_c.h"
   "rosidl_typesupport_introspection_c/my_interfaces/action/detail/deliver_item__type_support.c"
+  "rosidl_typesupport_introspection_c/my_interfaces/srv/detail/add_or_update_stock__rosidl_typesupport_introspection_c.h"
+  "rosidl_typesupport_introspection_c/my_interfaces/srv/detail/add_or_update_stock__type_support.c"
   "rosidl_typesupport_introspection_c/my_interfaces/srv/detail/check_stock__rosidl_typesupport_introspection_c.h"
   "rosidl_typesupport_introspection_c/my_interfaces/srv/detail/check_stock__type_support.c"
 )

@@ -63,16 +63,48 @@ namespace srv
 namespace builder
 {
 
+class Init_CheckStock_Response_message
+{
+public:
+  explicit Init_CheckStock_Response_message(::my_interfaces::srv::CheckStock_Response & msg)
+  : msg_(msg)
+  {}
+  ::my_interfaces::srv::CheckStock_Response message(::my_interfaces::srv::CheckStock_Response::_message_type arg)
+  {
+    msg_.message = std::move(arg);
+    return std::move(msg_);
+  }
+
+private:
+  ::my_interfaces::srv::CheckStock_Response msg_;
+};
+
 class Init_CheckStock_Response_stock_level
 {
 public:
-  Init_CheckStock_Response_stock_level()
-  : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
+  explicit Init_CheckStock_Response_stock_level(::my_interfaces::srv::CheckStock_Response & msg)
+  : msg_(msg)
   {}
-  ::my_interfaces::srv::CheckStock_Response stock_level(::my_interfaces::srv::CheckStock_Response::_stock_level_type arg)
+  Init_CheckStock_Response_message stock_level(::my_interfaces::srv::CheckStock_Response::_stock_level_type arg)
   {
     msg_.stock_level = std::move(arg);
-    return std::move(msg_);
+    return Init_CheckStock_Response_message(msg_);
+  }
+
+private:
+  ::my_interfaces::srv::CheckStock_Response msg_;
+};
+
+class Init_CheckStock_Response_success
+{
+public:
+  Init_CheckStock_Response_success()
+  : msg_(::rosidl_runtime_cpp::MessageInitialization::SKIP)
+  {}
+  Init_CheckStock_Response_stock_level success(::my_interfaces::srv::CheckStock_Response::_success_type arg)
+  {
+    msg_.success = std::move(arg);
+    return Init_CheckStock_Response_stock_level(msg_);
   }
 
 private:
@@ -90,7 +122,7 @@ template<>
 inline
 auto build<::my_interfaces::srv::CheckStock_Response>()
 {
-  return my_interfaces::srv::builder::Init_CheckStock_Response_stock_level();
+  return my_interfaces::srv::builder::Init_CheckStock_Response_success();
 }
 
 }  // namespace my_interfaces

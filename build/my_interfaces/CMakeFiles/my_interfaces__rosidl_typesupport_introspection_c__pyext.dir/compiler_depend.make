@@ -248,6 +248,9 @@ CMakeFiles/my_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_g
   /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string.h \
   /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/primitives_sequence.h \
   rosidl_generator_c/my_interfaces/srv/detail/check_stock__functions.h \
+  rosidl_generator_c/my_interfaces/srv/detail/add_or_update_stock__type_support.h \
+  rosidl_generator_c/my_interfaces/srv/detail/add_or_update_stock__struct.h \
+  rosidl_generator_c/my_interfaces/srv/detail/add_or_update_stock__functions.h \
   rosidl_generator_c/my_interfaces/action/detail/deliver_item__type_support.h \
   rosidl_generator_c/my_interfaces/action/detail/deliver_item__struct.h \
   /opt/ros/humble/include/unique_identifier_msgs/unique_identifier_msgs/msg/detail/uuid__struct.h \
@@ -260,6 +263,8 @@ rosidl_generator_c/my_interfaces/action/detail/deliver_item__struct.h:
 /opt/ros/humble/include/unique_identifier_msgs/unique_identifier_msgs/msg/detail/uuid__struct.h:
 
 rosidl_generator_c/my_interfaces/action/detail/deliver_item__type_support.h:
+
+rosidl_generator_c/my_interfaces/srv/detail/add_or_update_stock__type_support.h:
 
 /opt/ros/humble/include/rosidl_runtime_c/rosidl_runtime_c/string.h:
 
@@ -569,6 +574,8 @@ rosidl_generator_c/my_interfaces/srv/detail/check_stock__functions.h:
 
 /usr/include/x86_64-linux-gnu/bits/waitflags.h:
 
+rosidl_generator_c/my_interfaces/srv/detail/add_or_update_stock__functions.h:
+
 /usr/include/python3.10/weakrefobject.h:
 
 /usr/include/asm-generic/bitsperlong.h:
@@ -652,6 +659,8 @@ rosidl_generator_c/my_interfaces/srv/detail/check_stock__functions.h:
 /usr/lib/gcc/x86_64-linux-gnu/11/include/stddef.h:
 
 /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h:
+
+rosidl_generator_c/my_interfaces/srv/detail/add_or_update_stock__struct.h:
 
 /usr/include/python3.10/cpython/pyerrors.h:
 

@@ -152,30 +152,52 @@ struct CheckStock_Response_
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
+      this->success = false;
       this->stock_level = 0l;
+      this->message = "";
     }
   }
 
   explicit CheckStock_Response_(const ContainerAllocator & _alloc, rosidl_runtime_cpp::MessageInitialization _init = rosidl_runtime_cpp::MessageInitialization::ALL)
+  : message(_alloc)
   {
-    (void)_alloc;
     if (rosidl_runtime_cpp::MessageInitialization::ALL == _init ||
       rosidl_runtime_cpp::MessageInitialization::ZERO == _init)
     {
+      this->success = false;
       this->stock_level = 0l;
+      this->message = "";
     }
   }
 
   // field types and members
+  using _success_type =
+    bool;
+  _success_type success;
   using _stock_level_type =
     int32_t;
   _stock_level_type stock_level;
+  using _message_type =
+    std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>>;
+  _message_type message;
 
   // setters for named parameter idiom
+  Type & set__success(
+    const bool & _arg)
+  {
+    this->success = _arg;
+    return *this;
+  }
   Type & set__stock_level(
     const int32_t & _arg)
   {
     this->stock_level = _arg;
+    return *this;
+  }
+  Type & set__message(
+    const std::basic_string<char, std::char_traits<char>, typename std::allocator_traits<ContainerAllocator>::template rebind_alloc<char>> & _arg)
+  {
+    this->message = _arg;
     return *this;
   }
 
@@ -221,7 +243,13 @@ struct CheckStock_Response_
   // comparison operators
   bool operator==(const CheckStock_Response_ & other) const
   {
+    if (this->success != other.success) {
+      return false;
+    }
     if (this->stock_level != other.stock_level) {
+      return false;
+    }
+    if (this->message != other.message) {
       return false;
     }
     return true;

@@ -364,6 +364,10 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/my_interfaces/srv" TYPE FILE FILES "/home/robot/Desktop/Session06/Johnny-Answers-Session06/build/my_interfaces/rosidl_adapter/my_interfaces/srv/AddOrUpdateStock.idl")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/my_interfaces/action" TYPE FILE FILES "/home/robot/Desktop/Session06/Johnny-Answers-Session06/src/my_interfaces/action/DeliverItem.action")
 endif()
 
@@ -377,6 +381,18 @@ endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/my_interfaces/srv" TYPE FILE FILES "/home/robot/Desktop/Session06/Johnny-Answers-Session06/build/my_interfaces/rosidl_cmake/srv/CheckStock_Response.msg")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/my_interfaces/srv" TYPE FILE FILES "/home/robot/Desktop/Session06/Johnny-Answers-Session06/src/my_interfaces/srv/AddOrUpdateStock.srv")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/my_interfaces/srv" TYPE FILE FILES "/home/robot/Desktop/Session06/Johnny-Answers-Session06/build/my_interfaces/rosidl_cmake/srv/AddOrUpdateStock_Request.msg")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/my_interfaces/srv" TYPE FILE FILES "/home/robot/Desktop/Session06/Johnny-Answers-Session06/build/my_interfaces/rosidl_cmake/srv/AddOrUpdateStock_Response.msg")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)

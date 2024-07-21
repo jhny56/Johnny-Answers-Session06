@@ -1,0 +1,19 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from my_interfaces/srv/AddOrUpdateStock.srv
+// generated code does not contain a copyright notice
+
+
+module my_interfaces {
+  module srv {
+    struct AddOrUpdateStock_Request {
+      string item_name;
+
+      int32 stock_level;
+    };
+    struct AddOrUpdateStock_Response {
+      boolean success;
+
+      string message;
+    };
+  };
+};

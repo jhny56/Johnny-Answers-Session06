@@ -156,7 +156,24 @@ void CheckStock_Response_fini_function(void * message_memory)
   typed_message->~CheckStock_Response();
 }
 
-static const ::rosidl_typesupport_introspection_cpp::MessageMember CheckStock_Response_message_member_array[1] = {
+static const ::rosidl_typesupport_introspection_cpp::MessageMember CheckStock_Response_message_member_array[3] = {
+  {
+    "success",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_BOOLEAN,  // type
+    0,  // upper bound of string
+    nullptr,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(my_interfaces::srv::CheckStock_Response, success),  // bytes offset in struct
+    nullptr,  // default value
+    nullptr,  // size() function pointer
+    nullptr,  // get_const(index) function pointer
+    nullptr,  // get(index) function pointer
+    nullptr,  // fetch(index, &value) function pointer
+    nullptr,  // assign(index, value) function pointer
+    nullptr  // resize(index) function pointer
+  },
   {
     "stock_level",  // name
     ::rosidl_typesupport_introspection_cpp::ROS_TYPE_INT32,  // type
@@ -173,13 +190,30 @@ static const ::rosidl_typesupport_introspection_cpp::MessageMember CheckStock_Re
     nullptr,  // fetch(index, &value) function pointer
     nullptr,  // assign(index, value) function pointer
     nullptr  // resize(index) function pointer
+  },
+  {
+    "message",  // name
+    ::rosidl_typesupport_introspection_cpp::ROS_TYPE_STRING,  // type
+    0,  // upper bound of string
+    nullptr,  // members of sub message
+    false,  // is array
+    0,  // array size
+    false,  // is upper bound
+    offsetof(my_interfaces::srv::CheckStock_Response, message),  // bytes offset in struct
+    nullptr,  // default value
+    nullptr,  // size() function pointer
+    nullptr,  // get_const(index) function pointer
+    nullptr,  // get(index) function pointer
+    nullptr,  // fetch(index, &value) function pointer
+    nullptr,  // assign(index, value) function pointer
+    nullptr  // resize(index) function pointer
   }
 };
 
 static const ::rosidl_typesupport_introspection_cpp::MessageMembers CheckStock_Response_message_members = {
   "my_interfaces::srv",  // message namespace
   "CheckStock_Response",  // message name
-  1,  // number of fields
+  3,  // number of fields
   sizeof(my_interfaces::srv::CheckStock_Response),
   CheckStock_Response_message_member_array,  // message members
   CheckStock_Response_init_function,  // function to initialize message memory (memory has to be allocated)

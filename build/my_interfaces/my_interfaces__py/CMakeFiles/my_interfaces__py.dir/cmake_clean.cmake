@@ -6,6 +6,8 @@ file(REMOVE_RECURSE
   "../rosidl_generator_py/my_interfaces/action/_deliver_item.py"
   "../rosidl_generator_py/my_interfaces/action/_deliver_item_s.c"
   "../rosidl_generator_py/my_interfaces/srv/__init__.py"
+  "../rosidl_generator_py/my_interfaces/srv/_add_or_update_stock.py"
+  "../rosidl_generator_py/my_interfaces/srv/_add_or_update_stock_s.c"
   "../rosidl_generator_py/my_interfaces/srv/_check_stock.py"
   "../rosidl_generator_py/my_interfaces/srv/_check_stock_s.c"
   "CMakeFiles/my_interfaces__py"

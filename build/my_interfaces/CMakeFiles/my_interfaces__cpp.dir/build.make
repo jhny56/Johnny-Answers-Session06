@@ -74,6 +74,10 @@ CMakeFiles/my_interfaces__cpp: rosidl_generator_cpp/my_interfaces/srv/check_stoc
 CMakeFiles/my_interfaces__cpp: rosidl_generator_cpp/my_interfaces/srv/detail/check_stock__builder.hpp
 CMakeFiles/my_interfaces__cpp: rosidl_generator_cpp/my_interfaces/srv/detail/check_stock__struct.hpp
 CMakeFiles/my_interfaces__cpp: rosidl_generator_cpp/my_interfaces/srv/detail/check_stock__traits.hpp
+CMakeFiles/my_interfaces__cpp: rosidl_generator_cpp/my_interfaces/srv/add_or_update_stock.hpp
+CMakeFiles/my_interfaces__cpp: rosidl_generator_cpp/my_interfaces/srv/detail/add_or_update_stock__builder.hpp
+CMakeFiles/my_interfaces__cpp: rosidl_generator_cpp/my_interfaces/srv/detail/add_or_update_stock__struct.hpp
+CMakeFiles/my_interfaces__cpp: rosidl_generator_cpp/my_interfaces/srv/detail/add_or_update_stock__traits.hpp
 
 rosidl_generator_cpp/my_interfaces/action/deliver_item.hpp: /opt/ros/humble/lib/rosidl_generator_cpp/rosidl_generator_cpp
 rosidl_generator_cpp/my_interfaces/action/deliver_item.hpp: /opt/ros/humble/local/lib/python3.10/dist-packages/rosidl_generator_cpp/__init__.py
@@ -92,6 +96,7 @@ rosidl_generator_cpp/my_interfaces/action/deliver_item.hpp: /opt/ros/humble/shar
 rosidl_generator_cpp/my_interfaces/action/deliver_item.hpp: /opt/ros/humble/share/rosidl_generator_cpp/resource/srv__traits.hpp.em
 rosidl_generator_cpp/my_interfaces/action/deliver_item.hpp: rosidl_adapter/my_interfaces/action/DeliverItem.idl
 rosidl_generator_cpp/my_interfaces/action/deliver_item.hpp: rosidl_adapter/my_interfaces/srv/CheckStock.idl
+rosidl_generator_cpp/my_interfaces/action/deliver_item.hpp: rosidl_adapter/my_interfaces/srv/AddOrUpdateStock.idl
 rosidl_generator_cpp/my_interfaces/action/deliver_item.hpp: /opt/ros/humble/share/action_msgs/msg/GoalInfo.idl
 rosidl_generator_cpp/my_interfaces/action/deliver_item.hpp: /opt/ros/humble/share/action_msgs/msg/GoalStatus.idl
 rosidl_generator_cpp/my_interfaces/action/deliver_item.hpp: /opt/ros/humble/share/action_msgs/msg/GoalStatusArray.idl
@@ -123,12 +128,28 @@ rosidl_generator_cpp/my_interfaces/srv/detail/check_stock__struct.hpp: rosidl_ge
 rosidl_generator_cpp/my_interfaces/srv/detail/check_stock__traits.hpp: rosidl_generator_cpp/my_interfaces/action/deliver_item.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/my_interfaces/srv/detail/check_stock__traits.hpp
 
+rosidl_generator_cpp/my_interfaces/srv/add_or_update_stock.hpp: rosidl_generator_cpp/my_interfaces/action/deliver_item.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/my_interfaces/srv/add_or_update_stock.hpp
+
+rosidl_generator_cpp/my_interfaces/srv/detail/add_or_update_stock__builder.hpp: rosidl_generator_cpp/my_interfaces/action/deliver_item.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/my_interfaces/srv/detail/add_or_update_stock__builder.hpp
+
+rosidl_generator_cpp/my_interfaces/srv/detail/add_or_update_stock__struct.hpp: rosidl_generator_cpp/my_interfaces/action/deliver_item.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/my_interfaces/srv/detail/add_or_update_stock__struct.hpp
+
+rosidl_generator_cpp/my_interfaces/srv/detail/add_or_update_stock__traits.hpp: rosidl_generator_cpp/my_interfaces/action/deliver_item.hpp
+	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/my_interfaces/srv/detail/add_or_update_stock__traits.hpp
+
 my_interfaces__cpp: CMakeFiles/my_interfaces__cpp
 my_interfaces__cpp: rosidl_generator_cpp/my_interfaces/action/deliver_item.hpp
 my_interfaces__cpp: rosidl_generator_cpp/my_interfaces/action/detail/deliver_item__builder.hpp
 my_interfaces__cpp: rosidl_generator_cpp/my_interfaces/action/detail/deliver_item__struct.hpp
 my_interfaces__cpp: rosidl_generator_cpp/my_interfaces/action/detail/deliver_item__traits.hpp
+my_interfaces__cpp: rosidl_generator_cpp/my_interfaces/srv/add_or_update_stock.hpp
 my_interfaces__cpp: rosidl_generator_cpp/my_interfaces/srv/check_stock.hpp
+my_interfaces__cpp: rosidl_generator_cpp/my_interfaces/srv/detail/add_or_update_stock__builder.hpp
+my_interfaces__cpp: rosidl_generator_cpp/my_interfaces/srv/detail/add_or_update_stock__struct.hpp
+my_interfaces__cpp: rosidl_generator_cpp/my_interfaces/srv/detail/add_or_update_stock__traits.hpp
 my_interfaces__cpp: rosidl_generator_cpp/my_interfaces/srv/detail/check_stock__builder.hpp
 my_interfaces__cpp: rosidl_generator_cpp/my_interfaces/srv/detail/check_stock__struct.hpp
 my_interfaces__cpp: rosidl_generator_cpp/my_interfaces/srv/detail/check_stock__traits.hpp

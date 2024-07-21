@@ -250,13 +250,24 @@ my_interfaces__srv__CheckStock_Request__Sequence__copy(
 }
 
 
+// Include directives for member types
+// Member `message`
+// already included above
+// #include "rosidl_runtime_c/string_functions.h"
+
 bool
 my_interfaces__srv__CheckStock_Response__init(my_interfaces__srv__CheckStock_Response * msg)
 {
   if (!msg) {
     return false;
   }
+  // success
   // stock_level
+  // message
+  if (!rosidl_runtime_c__String__init(&msg->message)) {
+    my_interfaces__srv__CheckStock_Response__fini(msg);
+    return false;
+  }
   return true;
 }
 
@@ -266,7 +277,10 @@ my_interfaces__srv__CheckStock_Response__fini(my_interfaces__srv__CheckStock_Res
   if (!msg) {
     return;
   }
+  // success
   // stock_level
+  // message
+  rosidl_runtime_c__String__fini(&msg->message);
 }
 
 bool
@@ -275,8 +289,18 @@ my_interfaces__srv__CheckStock_Response__are_equal(const my_interfaces__srv__Che
   if (!lhs || !rhs) {
     return false;
   }
+  // success
+  if (lhs->success != rhs->success) {
+    return false;
+  }
   // stock_level
   if (lhs->stock_level != rhs->stock_level) {
+    return false;
+  }
+  // message
+  if (!rosidl_runtime_c__String__are_equal(
+      &(lhs->message), &(rhs->message)))
+  {
     return false;
   }
   return true;
@@ -290,8 +314,16 @@ my_interfaces__srv__CheckStock_Response__copy(
   if (!input || !output) {
     return false;
   }
+  // success
+  output->success = input->success;
   // stock_level
   output->stock_level = input->stock_level;
+  // message
+  if (!rosidl_runtime_c__String__copy(
+      &(input->message), &(output->message)))
+  {
+    return false;
+  }
   return true;
 }
 

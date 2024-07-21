@@ -9,26 +9,31 @@ from launch import LaunchDescription
 from launch.actions import IncludeLaunchDescription
 from launch.launch_description_sources import PythonLaunchDescriptionSource
 from launch_ros.substitutions import FindPackageShare
+from launch.actions import ExecuteProcess
+import os
 
 def generate_launch_description():
 
 
-    item_name = LaunchConfiguration('item_name')
-    quantity = LaunchConfiguration('quantity')
-    check_item_name = LaunchConfiguration('check_item_name')
+    # item_name = LaunchConfiguration('item_name')
+    # quantity = LaunchConfiguration('quantity')
+    # check_item_name = LaunchConfiguration('check_item_name')
 
-    item_name_arg = DeclareLaunchArgument(
-        'item_name', default_value='item1',
-        description='Name of the item to deliver'
-    ),
-    quantity_arg = DeclareLaunchArgument(
-        'quantity', default_value='3',
-        description='Quantity of the item to deliver'
-    ),
-    check_item_name_arg = DeclareLaunchArgument(
-        'check_item_name', default_value='item1',
-        description='Name of the item to check stock level'
-    ),
+    # item_name_arg = DeclareLaunchArgument(
+    #     'item_name', default_value='item1',
+    #     description='Name of the item to deliver'
+    # ),
+    # quantity_arg = DeclareLaunchArgument(
+    #     'quantity', default_value='3',
+    #     description='Quantity of the item to deliver'
+    # ),
+    # check_item_name_arg = DeclareLaunchArgument(
+    #     'check_item_name', default_value='item1',
+    #     description='Name of the item to check stock level'
+    # ),
+
+    package_share_directory = os.path.join(os.path.dirname(__file__), '..', 'database')
+    init_db_path = os.path.join(package_share_directory, 'init_db.py')
 
     return LaunchDescription([
         # LaunchConfiguration('item_name'),
@@ -51,6 +56,11 @@ def generate_launch_description():
         #         'quantity': 2,
         #     }.items()
         # ),
+        ExecuteProcess(
+            cmd=['python3', init_db_path],
+            name='init_db',
+            output='screen'
+        ),
         Node(
             package='warehouse_robot',  
             executable='delivery_action',
@@ -65,23 +75,29 @@ def generate_launch_description():
         ),
         Node(
             package='warehouse_robot',
-            executable='delivery_client',
-            name='delivery_client',
-            output='screen',
-            # arguments=[LaunchConfiguration('item_name'), LaunchConfiguration('quantity')],
-            # parameters=[
-            #     {'item_name': 'default_item'},
-            #     {'quantity': 1}
-            # ]
+            executable='stock_manager',
+            name='stock_manager',
+            output='screen'
         ),
-        Node(
-            package='warehouse_robot',
-            executable='stock_client',
-            name='stock_client',
-            output='screen',
-            # arguments=[LaunchConfiguration('check_item_name')],
-            # parameters=[
-            #     {'check_item_name': 'item2'},
-            # ]
-        ),
+        # Node(
+        #     package='warehouse_robot',
+        #     executable='delivery_client',
+        #     name='delivery_client',
+        #     output='screen',
+        #     # arguments=[LaunchConfiguration('item_name'), LaunchConfiguration('quantity')],
+        #     # parameters=[
+        #     #     {'item_name': 'default_item'},
+        #     #     {'quantity': 1}
+        #     # ]
+        # ),
+        # Node(
+        #     package='warehouse_robot',
+        #     executable='stock_client',
+        #     name='stock_client',
+        #     output='screen',
+        #     # arguments=[LaunchConfiguration('check_item_name')],
+        #     # parameters=[
+        #     #     {'check_item_name': 'item2'},
+        #     # ]
+        # ),
     ])

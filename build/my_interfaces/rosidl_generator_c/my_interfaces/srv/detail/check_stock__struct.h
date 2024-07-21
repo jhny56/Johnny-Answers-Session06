@@ -41,10 +41,17 @@ typedef struct my_interfaces__srv__CheckStock_Request__Sequence
 
 // Constants defined in the message
 
+// Include directives for member types
+// Member 'message'
+// already included above
+// #include "rosidl_runtime_c/string.h"
+
 /// Struct defined in srv/CheckStock in the package my_interfaces.
 typedef struct my_interfaces__srv__CheckStock_Response
 {
+  bool success;
   int32_t stock_level;
+  rosidl_runtime_c__String message;
 } my_interfaces__srv__CheckStock_Response;
 
 // Struct for a sequence of my_interfaces__srv__CheckStock_Response.

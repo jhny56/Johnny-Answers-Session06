@@ -247,8 +247,12 @@ cdr_serialize(
   const my_interfaces::srv::CheckStock_Response & ros_message,
   eprosima::fastcdr::Cdr & cdr)
 {
+  // Member: success
+  cdr << (ros_message.success ? true : false);
   // Member: stock_level
   cdr << ros_message.stock_level;
+  // Member: message
+  cdr << ros_message.message;
   return true;
 }
 
@@ -258,8 +262,18 @@ cdr_deserialize(
   eprosima::fastcdr::Cdr & cdr,
   my_interfaces::srv::CheckStock_Response & ros_message)
 {
+  // Member: success
+  {
+    uint8_t tmp;
+    cdr >> tmp;
+    ros_message.success = tmp ? true : false;
+  }
+
   // Member: stock_level
   cdr >> ros_message.stock_level;
+
+  // Member: message
+  cdr >> ros_message.message;
 
   return true;
 }
@@ -277,12 +291,22 @@ get_serialized_size(
   (void)padding;
   (void)wchar_size;
 
+  // Member: success
+  {
+    size_t item_size = sizeof(ros_message.success);
+    current_alignment += item_size +
+      eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
+  }
   // Member: stock_level
   {
     size_t item_size = sizeof(ros_message.stock_level);
     current_alignment += item_size +
       eprosima::fastcdr::Cdr::alignment(current_alignment, item_size);
   }
+  // Member: message
+  current_alignment += padding +
+    eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
+    (ros_message.message.size() + 1);
 
   return current_alignment - initial_alignment;
 }
@@ -307,6 +331,14 @@ max_serialized_size_CheckStock_Response(
   is_plain = true;
 
 
+  // Member: success
+  {
+    size_t array_size = 1;
+
+    last_member_size = array_size * sizeof(uint8_t);
+    current_alignment += array_size * sizeof(uint8_t);
+  }
+
   // Member: stock_level
   {
     size_t array_size = 1;
@@ -314,6 +346,19 @@ max_serialized_size_CheckStock_Response(
     last_member_size = array_size * sizeof(uint32_t);
     current_alignment += array_size * sizeof(uint32_t) +
       eprosima::fastcdr::Cdr::alignment(current_alignment, sizeof(uint32_t));
+  }
+
+  // Member: message
+  {
+    size_t array_size = 1;
+
+    full_bounded = false;
+    is_plain = false;
+    for (size_t index = 0; index < array_size; ++index) {
+      current_alignment += padding +
+        eprosima::fastcdr::Cdr::alignment(current_alignment, padding) +
+        1;
+    }
   }
 
   size_t ret_val = current_alignment - initial_alignment;
@@ -324,7 +369,7 @@ max_serialized_size_CheckStock_Response(
     using DataType = my_interfaces::srv::CheckStock_Response;
     is_plain =
       (
-      offsetof(DataType, stock_level) +
+      offsetof(DataType, message) +
       last_member_size
       ) == ret_val;
   }

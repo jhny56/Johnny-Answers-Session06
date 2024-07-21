@@ -7,4 +7,5 @@ my_interfaces.egg-info/top_level.txt
 my_interfaces/action/__init__.py
 my_interfaces/action/_deliver_item.py
 my_interfaces/srv/__init__.py
+my_interfaces/srv/_add_or_update_stock.py
 my_interfaces/srv/_check_stock.py

@@ -178,22 +178,30 @@ class CheckStock_Response(metaclass=Metaclass_CheckStock_Response):
     """Message class 'CheckStock_Response'."""
 
     __slots__ = [
+        '_success',
         '_stock_level',
+        '_message',
     ]
 
     _fields_and_field_types = {
+        'success': 'boolean',
         'stock_level': 'int32',
+        'message': 'string',
     }
 
     SLOT_TYPES = (
+        rosidl_parser.definition.BasicType('boolean'),  # noqa: E501
         rosidl_parser.definition.BasicType('int32'),  # noqa: E501
+        rosidl_parser.definition.UnboundedString(),  # noqa: E501
     )
 
     def __init__(self, **kwargs):
         assert all('_' + key in self.__slots__ for key in kwargs.keys()), \
             'Invalid arguments passed to constructor: %s' % \
             ', '.join(sorted(k for k in kwargs.keys() if '_' + k not in self.__slots__))
+        self.success = kwargs.get('success', bool())
         self.stock_level = kwargs.get('stock_level', int())
+        self.message = kwargs.get('message', str())
 
     def __repr__(self):
         typename = self.__class__.__module__.split('.')
@@ -224,7 +232,11 @@ class CheckStock_Response(metaclass=Metaclass_CheckStock_Response):
     def __eq__(self, other):
         if not isinstance(other, self.__class__):
             return False
+        if self.success != other.success:
+            return False
         if self.stock_level != other.stock_level:
+            return False
+        if self.message != other.message:
             return False
         return True
 
@@ -232,6 +244,19 @@ class CheckStock_Response(metaclass=Metaclass_CheckStock_Response):
     def get_fields_and_field_types(cls):
         from copy import copy
         return copy(cls._fields_and_field_types)
+
+    @builtins.property
+    def success(self):
+        """Message field 'success'."""
+        return self._success
+
+    @success.setter
+    def success(self, value):
+        if __debug__:
+            assert \
+                isinstance(value, bool), \
+                "The 'success' field must be of type 'bool'"
+        self._success = value
 
     @builtins.property
     def stock_level(self):
@@ -247,6 +272,19 @@ class CheckStock_Response(metaclass=Metaclass_CheckStock_Response):
             assert value >= -2147483648 and value < 2147483648, \
                 "The 'stock_level' field must be an integer in [-2147483648, 2147483647]"
         self._stock_level = value
+
+    @builtins.property
+    def message(self):
+        """Message field 'message'."""
+        return self._message
+
+    @message.setter
+    def message(self, value):
+        if __debug__:
+            assert \
+                isinstance(value, str), \
+                "The 'message' field must be of type 'str'"
+        self._message = value
 
 
 class Metaclass_CheckStock(type):

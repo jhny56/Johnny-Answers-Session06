@@ -13,6 +13,7 @@ setup(
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
         (os.path.join('share', package_name, 'launch'), glob('launch/*.py')),
+         ('share/' + package_name + '/database', ['database/init_db.py']),
     ],
     install_requires=['setuptools'],
     zip_safe=True,
@@ -27,6 +28,7 @@ setup(
             'stock_server = warehouse_robot.stock_checker:main',
             'delivery_client = warehouse_robot.delivery_client:main',
             'stock_client = warehouse_robot.stock_checker_client:main',
+            'stock_manager = warehouse_robot.stock_manager:main'
         ],
     },
 )

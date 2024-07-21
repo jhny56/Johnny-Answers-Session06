@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/robot/Desktop/Session06/Johnny-Answers-Session06/build/my_interfaces/rosidl_generator_py/my_interfaces/action/_deliver_item_s.c" "CMakeFiles/my_interfaces__rosidl_generator_py.dir/rosidl_generator_py/my_interfaces/action/_deliver_item_s.c.o" "gcc" "CMakeFiles/my_interfaces__rosidl_generator_py.dir/rosidl_generator_py/my_interfaces/action/_deliver_item_s.c.o.d"
+  "/home/robot/Desktop/Session06/Johnny-Answers-Session06/build/my_interfaces/rosidl_generator_py/my_interfaces/srv/_add_or_update_stock_s.c" "CMakeFiles/my_interfaces__rosidl_generator_py.dir/rosidl_generator_py/my_interfaces/srv/_add_or_update_stock_s.c.o" "gcc" "CMakeFiles/my_interfaces__rosidl_generator_py.dir/rosidl_generator_py/my_interfaces/srv/_add_or_update_stock_s.c.o.d"
   "/home/robot/Desktop/Session06/Johnny-Answers-Session06/build/my_interfaces/rosidl_generator_py/my_interfaces/srv/_check_stock_s.c" "CMakeFiles/my_interfaces__rosidl_generator_py.dir/rosidl_generator_py/my_interfaces/srv/_check_stock_s.c.o" "gcc" "CMakeFiles/my_interfaces__rosidl_generator_py.dir/rosidl_generator_py/my_interfaces/srv/_check_stock_s.c.o.d"
   )
 
