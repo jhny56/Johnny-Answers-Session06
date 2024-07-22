@@ -35,7 +35,7 @@ class WarehouseRobot(Node):
             cancel_callback= self.cancel_callback
         )
 
-        
+        self.pool = ThreadPoolExecutor(4)
 
         self.get_logger().info(f'DELIVERING ACTION SERVER START')
 
@@ -54,9 +54,13 @@ class WarehouseRobot(Node):
         req = CheckStock.Request()
         req.item_name = item_name
 
-        future = await self.cli_get.call_async(req)
-        # future.add_done_callback(self.done_callback)
-        return future
+        executor = ThreadPoolExecutor()
+        future = await self.loop.run_in_executor(executor, self.cli_get.call_async(req))
+
+
+        response = future
+
+        return response
     
     def done_callback(self, future):
         self.get_logger().info('CALL BACK ')
@@ -64,17 +68,25 @@ class WarehouseRobot(Node):
         if future.result().stock_level:
             return GoalResponse.ACCEPT
 
-    def goal_callback(self, goal_request):
+    async def goal_callback(self, goal_request):
         self.get_logger().info('Received goal request')
-        loop = asyncio.get_event_loop()
-        future = asyncio.run_coroutine_threadsafe(self.async_goal_callback(goal_request), loop)
-        return future.result()
-        
-    async def async_goal_callback(self, goal_request):
         self.quantity = goal_request.quantity
         self.item_name = goal_request.item_name
+        # future = asyncio.run(self.async_goal_callback(goal_request))
+        req = CheckStock.Request()
+        req.item_name = goal_request.item_name
 
-        response = await self.send_get_request(self.item_name)
+        self.loop = asyncio.get_event_loop()
+        response = self.loop.run_until_complete(self.send_get_request(self.item_name))
+        self.loop.close()
+
+        
+        # future = self.pool.submit(self.cli_get.call_async,req)
+        # response = await future
+
+
+        # future = self.pool.submit(self.send_get_request,self.item_name)
+        # response = future.result()
 
         if response.stock_level != 0 and response.stock_level >= self.quantity and self.quantity > 0:
             self.stock_level = response.stock_level
@@ -83,6 +95,29 @@ class WarehouseRobot(Node):
         else:
             self.get_logger().info('Goal request REJECT')
             return GoalResponse.REJECT
+
+        
+        
+    # async def async_goal_callback(self, goal_request):
+    #     self.get_logger().info('async_goal_callback RUN')
+
+        
+
+    #     # # response = await self.send_get_request(self.item_name)
+    #     # task = asyncio.create_task(self.send_get_request(self.item_name))
+    #     # task2 = asyncio.create_task(self.send_get_request(self.item_name))
+
+    #     response = await asyncio.gather(task)
+    #     self.get_logger().info('async_goal_callback task finish',response)
+
+
+    #     if response.stock_level != 0 and response.stock_level >= self.quantity and self.quantity > 0:
+    #         self.stock_level = response.stock_level
+    #         self.get_logger().info('Goal request ACCEPT')
+    #         return GoalResponse.ACCEPT
+    #     else:
+    #         self.get_logger().info('Goal request REJECT')
+    #         return GoalResponse.REJECT
     
 
     def cancel_callback(self, goal_handle):
