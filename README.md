@@ -17,4 +17,6 @@ my_interfaces.action.DeliverItem_FeedbackMessage(goal_id=unique_identifier_msgs.
 
 
 
+ros2 launch warehouse_robot warehouse_robot_launch.py --> to launch the database and the servers
 
+ros2 action send_goal /deliver_item my_interfaces/action/DeliverItem "{item_name: 'item3', quantity: 2}" -f --> test action server
