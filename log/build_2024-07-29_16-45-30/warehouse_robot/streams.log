@@ -1,0 +1,28 @@
+[1.230s] Invoking command in '/home/robot/Desktop/Session06/Johnny-Answers-Session06/src/warehouse_robot': PYTHONPATH=/home/robot/Desktop/Session06/Johnny-Answers-Session06/build/warehouse_robot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robot/Desktop/Session06/Johnny-Answers-Session06/install/warehouse_robot/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/warehouse_robot build --build-base /home/robot/Desktop/Session06/Johnny-Answers-Session06/build/warehouse_robot/build install --record /home/robot/Desktop/Session06/Johnny-Answers-Session06/build/warehouse_robot/install.log --single-version-externally-managed install_data
+[1.678s] running egg_info
+[1.682s] writing ../../build/warehouse_robot/warehouse_robot.egg-info/PKG-INFO
+[1.683s] writing dependency_links to ../../build/warehouse_robot/warehouse_robot.egg-info/dependency_links.txt
+[1.683s] writing entry points to ../../build/warehouse_robot/warehouse_robot.egg-info/entry_points.txt
+[1.684s] writing requirements to ../../build/warehouse_robot/warehouse_robot.egg-info/requires.txt
+[1.684s] writing top-level names to ../../build/warehouse_robot/warehouse_robot.egg-info/top_level.txt
+[1.687s] reading manifest file '../../build/warehouse_robot/warehouse_robot.egg-info/SOURCES.txt'
+[1.689s] writing manifest file '../../build/warehouse_robot/warehouse_robot.egg-info/SOURCES.txt'
+[1.690s] running build
+[1.690s] running build_py
+[1.690s] copying warehouse_robot/Delivery_Action_Server.py -> /home/robot/Desktop/Session06/Johnny-Answers-Session06/build/warehouse_robot/build/lib/warehouse_robot
+[1.692s] running install
+[1.692s] running install_lib
+[1.694s] copying /home/robot/Desktop/Session06/Johnny-Answers-Session06/build/warehouse_robot/build/lib/warehouse_robot/Delivery_Action_Server.py -> /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/warehouse_robot/lib/python3.10/site-packages/warehouse_robot
+[1.695s] byte-compiling /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/warehouse_robot/lib/python3.10/site-packages/warehouse_robot/Delivery_Action_Server.py to Delivery_Action_Server.cpython-310.pyc
+[1.698s] running install_data
+[1.699s] running install_egg_info
+[1.701s] removing '/home/robot/Desktop/Session06/Johnny-Answers-Session06/install/warehouse_robot/lib/python3.10/site-packages/warehouse_robot-0.0.0-py3.10.egg-info' (and everything under it)
+[1.701s] Copying ../../build/warehouse_robot/warehouse_robot.egg-info to /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/warehouse_robot/lib/python3.10/site-packages/warehouse_robot-0.0.0-py3.10.egg-info
+[1.703s] running install_scripts
+[1.740s] Installing delivery_action script to /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/warehouse_robot/lib/warehouse_robot
+[1.741s] Installing delivery_client script to /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/warehouse_robot/lib/warehouse_robot
+[1.742s] Installing stock_client script to /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/warehouse_robot/lib/warehouse_robot
+[1.742s] Installing stock_manager script to /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/warehouse_robot/lib/warehouse_robot
+[1.743s] Installing stock_server script to /home/robot/Desktop/Session06/Johnny-Answers-Session06/install/warehouse_robot/lib/warehouse_robot
+[1.743s] writing list of installed files to '/home/robot/Desktop/Session06/Johnny-Answers-Session06/build/warehouse_robot/install.log'
+[1.777s] Invoked command in '/home/robot/Desktop/Session06/Johnny-Answers-Session06/src/warehouse_robot' returned '0': PYTHONPATH=/home/robot/Desktop/Session06/Johnny-Answers-Session06/build/warehouse_robot/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/robot/Desktop/Session06/Johnny-Answers-Session06/install/warehouse_robot/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/warehouse_robot build --build-base /home/robot/Desktop/Session06/Johnny-Answers-Session06/build/warehouse_robot/build install --record /home/robot/Desktop/Session06/Johnny-Answers-Session06/build/warehouse_robot/install.log --single-version-externally-managed install_data
